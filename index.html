@@ -3,76 +3,62 @@
 
 <head>
   <meta charset="utf-8">
-
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>GoodGround — Clear Answers for Starting & Growing Online</title>
 
-  <meta id="meta-description" name="description" content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
+  <meta
+    id="meta-description"
+    name="description"
+    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
+  >
 
-  <meta name="robots"
-        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+  >
 
-  <link rel="canonical"
-        href="https://goodground.site/">
+  <link rel="canonical" href="https://goodground.site/">
+  <meta name="theme-color" content="#174f3a">
 
-  <meta name="theme-color"
-        content="#174f3a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="GoodGround">
 
-  <!-- OPEN GRAPH / FACEBOOK -->
-  <meta property="og:type"
-        content="website">
+  <meta
+    property="og:title"
+    content="GoodGround — Clear Answers for Starting & Growing Online"
+  >
 
-  <meta property="og:site_name"
-        content="GoodGround">
+  <meta
+    property="og:description"
+    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
+  >
 
-  <meta property="og:title"
-        content="GoodGround — Clear Answers for Starting & Growing Online">
+  <meta property="og:url" content="https://goodground.site/">
+  <meta property="og:image" content="https://goodground.site/goodground-logo.png">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="pt_BR">
 
-  <meta property="og:description"
-        content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <meta property="og:url"
-        content="https://goodground.site/">
+  <meta
+    name="twitter:title"
+    content="GoodGround — Clear Answers for Starting & Growing Online"
+  >
 
-  <meta property="og:image"
-        content="https://goodground.site/goodground-logo.png">
+  <meta
+    name="twitter:description"
+    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
+  >
 
-  <meta property="og:image:alt"
-        content="GoodGround — Clear Answers for Starting & Growing Online">
+  <meta
+    name="twitter:image"
+    content="https://goodground.site/goodground-logo.png"
+  >
 
-  <meta property="og:locale"
-        content="en_US">
+  <link rel="icon" href="/goodground-logo.png">
+  <link rel="stylesheet" href="/styles.css">
 
-  <meta property="og:locale:alternate"
-        content="pt_BR">
-
-  <!-- TWITTER / X -->
-  <meta name="twitter:card"
-        content="summary_large_image">
-
-  <meta name="twitter:title"
-        content="GoodGround — Clear Answers for Starting & Growing Online">
-
-  <meta name="twitter:description"
-        content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
-
-  <meta name="twitter:image"
-        content="https://goodground.site/goodground-logo.png">
-
-  <meta name="twitter:image:alt"
-        content="GoodGround — Clear Answers for Starting & Growing Online">
-
-  <!-- FAVICON -->
-  <link rel="icon"
-        href="/goodground-logo.png">
-
-  <!-- STYLES -->
-  <link rel="stylesheet"
-        href="/styles.css">
-
-  <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -99,13 +85,65 @@
   </script>
 
   <style>
+
+    :root {
+      --green-dark: #123f2f;
+      --green-main: #174f3a;
+      --green-medium: #2f6b4d;
+      --green-light: #dce8dc;
+      --green-soft: #e5ece1;
+      --cream: #f1ede1;
+      --cream-light: #f7f4eb;
+      --card: #fffdf8;
+      --text: #17382a;
+      --muted: #40584c;
+      --border: rgba(23,79,58,.18);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream-light);
+      color: var(--text);
+    }
+
+    .site-header {
+      background: rgba(248,246,239,.96);
+      border-bottom: 1px solid rgba(23,79,58,.16);
+      box-shadow: 0 8px 26px rgba(18,63,47,.05);
+      backdrop-filter: blur(10px);
+    }
+
     .hero-new {
       position: relative;
       overflow: hidden;
       padding: 88px 0 76px;
+
       background:
-        radial-gradient(circle at 85% 15%, rgba(54, 111, 78, .14), transparent 30%),
-        linear-gradient(180deg, #fbfaf5 0%, #f4f7f2 100%);
+        radial-gradient(
+          circle at 82% 14%,
+          rgba(47,107,77,.22),
+          transparent 31%
+        ),
+        radial-gradient(
+          circle at 15% 85%,
+          rgba(23,79,58,.10),
+          transparent 28%
+        ),
+        linear-gradient(
+          180deg,
+          #f5f0e3 0%,
+          #e8eee3 100%
+        );
+
+      border-bottom: 1px solid rgba(23,79,58,.10);
     }
 
     .hero-new .hero-inner {
@@ -115,15 +153,23 @@
     .hero-new h1 {
       max-width: 860px;
       margin: 16px 0 22px;
-      font-size: clamp(2.7rem, 6vw, 5.4rem);
+
+      font-size: clamp(
+        2.7rem,
+        6vw,
+        5.4rem
+      );
+
       line-height: .98;
       letter-spacing: -.045em;
+      color: var(--green-dark);
     }
 
     .hero-new .hero-lead {
       max-width: 760px;
       font-size: clamp(1.08rem, 2vw, 1.32rem);
       line-height: 1.7;
+      color: var(--muted);
     }
 
     .hero-question-strip {
@@ -136,14 +182,23 @@
     .hero-question-strip a {
       display: inline-flex;
       align-items: center;
+
       padding: 10px 14px;
-      border: 1px solid rgba(23,79,58,.18);
+
+      border: 1px solid rgba(23,79,58,.24);
       border-radius: 999px;
-      background: rgba(255,255,255,.72);
-      color: inherit;
+
+      background: rgba(255,253,248,.90);
+
+      color: var(--green-dark);
       text-decoration: none;
+
       font-size: .94rem;
       font-weight: 700;
+
+      box-shadow:
+        0 6px 16px
+        rgba(18,63,47,.05);
     }
 
     .hero-question-strip a:hover {
@@ -152,18 +207,42 @@
 
     .brand-line {
       margin-top: 28px;
+
       font-size: .92rem;
       letter-spacing: .13em;
+
       text-transform: uppercase;
-      opacity: .72;
+
+      color: var(--green-dark);
+      opacity: .78;
+    }
+
+    .section {
+      background: var(--cream-light);
+    }
+
+    .soft-background {
+      background: var(--green-soft) !important;
     }
 
     .question-grid,
-    .help-grid,
     .resource-grid,
     .article-grid {
       display: grid;
-      grid-template-columns: repeat(2, minmax(0,1fr));
+
+      grid-template-columns:
+        repeat(2, minmax(0,1fr));
+
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .help-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, minmax(0,1fr));
+
       gap: 18px;
       margin-top: 34px;
     }
@@ -172,79 +251,147 @@
     .help-card,
     .resource-card,
     .article-card {
+
       display: block;
+
       padding: 26px;
-      border: 1px solid rgba(23,79,58,.13);
+
+      border:
+        1px solid
+        var(--border);
+
       border-radius: 20px;
-      background: #fff;
-      box-shadow: 0 10px 32px rgba(23,79,58,.06);
-      text-decoration: none;
+
+      background:
+        var(--card);
+
+      box-shadow:
+        0 12px 30px
+        rgba(18,63,47,.09);
+
       color: inherit;
+      text-decoration: none;
     }
 
     .question-card:hover,
     .article-card:hover,
     .resource-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 38px rgba(23,79,58,.09);
+
+      transform:
+        translateY(-3px);
+
+      box-shadow:
+        0 16px 38px
+        rgba(18,63,47,.14);
+
+      border-color:
+        rgba(23,79,58,.28);
     }
 
     .question-card h3,
     .help-card h3,
     .resource-card h3,
     .article-card h3 {
+
       margin-top: 0;
       margin-bottom: 10px;
+
+      color:
+        var(--green-dark);
     }
 
     .question-card p,
     .help-card p,
     .resource-card p,
     .article-card p {
+
       margin-bottom: 0;
+      color: var(--muted);
     }
 
     .story-panel {
+
       display: grid;
-      grid-template-columns: .85fr 1.15fr;
+
+      grid-template-columns:
+        .85fr 1.15fr;
+
       gap: 42px;
       align-items: center;
+
       padding: 44px;
+
       border-radius: 28px;
-      background: #eef4ee;
+
+      background:
+        linear-gradient(
+          135deg,
+          #dce8dc 0%,
+          #e8eee3 100%
+        );
+
+      border:
+        1px solid
+        rgba(23,79,58,.14);
+
+      box-shadow:
+        0 16px 38px
+        rgba(18,63,47,.08);
     }
 
     .story-quote {
-      font-size: clamp(1.9rem, 3.3vw, 3.1rem);
+      font-size:
+        clamp(
+          1.9rem,
+          3.3vw,
+          3.1rem
+        );
+
       line-height: 1.08;
       letter-spacing: -.025em;
+
       margin: 0;
+
+      color:
+        var(--green-dark);
     }
 
     .story-copy p {
+
       font-size: 1.06rem;
       line-height: 1.78;
-    }
 
-    .help-grid {
-      grid-template-columns: repeat(4, minmax(0,1fr));
+      color: var(--muted);
     }
 
     .step-number {
+
       display: inline-flex;
+
       width: 38px;
       height: 38px;
+
       align-items: center;
       justify-content: center;
+
       border-radius: 50%;
-      background: #174f3a;
+
+      background:
+        var(--green-main);
+
       color: #fff;
+
       font-weight: 800;
+
       margin-bottom: 16px;
     }
 
     .answer-block {
-      border-top: 1px solid rgba(23,79,58,.13);
+
+      border-top:
+        1px solid
+        rgba(23,79,58,.20);
+
       padding: 30px 0;
     }
 
@@ -254,17 +401,32 @@
 
     .answer-block h3 {
       margin-bottom: 10px;
+      color: var(--green-dark);
     }
 
     .answer-block p {
       max-width: 830px;
+      color: var(--muted);
     }
 
     .start-panel {
+
       padding: 48px;
+
       border-radius: 28px;
-      background: #174f3a;
+
+      background:
+        linear-gradient(
+          135deg,
+          #123f2f 0%,
+          #1d5c43 100%
+        );
+
       color: #fff;
+
+      box-shadow:
+        0 18px 44px
+        rgba(18,63,47,.18);
     }
 
     .start-panel .section-title,
@@ -273,84 +435,231 @@
     }
 
     .start-steps {
+
       display: grid;
-      grid-template-columns: repeat(4,minmax(0,1fr));
+
+      grid-template-columns:
+        repeat(4,minmax(0,1fr));
+
       gap: 14px;
-      margin: 28px 0;
+
+      margin:
+        28px 0;
     }
 
     .start-step {
+
       padding: 18px;
+
       border-radius: 16px;
-      background: rgba(255,255,255,.08);
+
+      background:
+        rgba(255,255,255,.12);
+
+      border:
+        1px solid
+        rgba(255,255,255,.12);
     }
 
     .resource-card .tag,
     .article-card .tag {
+
       display: inline-block;
+
       margin-bottom: 12px;
+
       font-size: .78rem;
       font-weight: 800;
+
       letter-spacing: .08em;
       text-transform: uppercase;
+
       opacity: .72;
     }
 
-    .section-note {
-      max-width: 760px;
-      margin-top: 18px;
-      opacity: .82;
+    .trust-note {
+
+      margin-top: 28px;
+
+      padding:
+        18px 20px;
+
+      border-left:
+        4px solid
+        var(--green-dark);
+
+      background:
+        #e4ebdf;
+
+      color:
+        var(--text);
     }
 
-    .trust-note {
-      margin-top: 28px;
-      padding: 18px 20px;
-      border-left: 4px solid #174f3a;
-      background: #f7f8f4;
+    .dark-section {
+
+      background:
+        linear-gradient(
+          135deg,
+          #103a2b 0%,
+          #174f3a 65%,
+          #1f6046 100%
+        );
+    }
+
+    .dark-section .section-title,
+    .dark-section .eyebrow,
+    .dark-section p,
+    .dark-section a {
+      color: #fff;
+    }
+
+    .contact-cta {
+      background: #ece6d8;
+    }
+
+    .contact-cta-inner {
+
+      background:
+        #f8f4e9;
+
+      border:
+        1px solid
+        rgba(23,79,58,.14);
+
+      border-radius:
+        26px;
+
+      box-shadow:
+        0 14px 34px
+        rgba(18,63,47,.08);
+
+      padding: 42px;
+    }
+
+    .section-title,
+    h2,
+    h3 {
+      color:
+        var(--green-dark);
+    }
+
+    .section-intro {
+      color:
+        var(--muted);
+    }
+
+    .footer {
+
+      background:
+        #0f3528;
+
+      color:
+        #f5f3ea;
+    }
+
+    .footer a,
+    .footer p,
+    .footer h4,
+    .footer strong,
+    .footer span {
+      color: inherit;
+    }
+
+    .footer-bottom {
+
+      border-top:
+        1px solid
+        rgba(255,255,255,.14);
+    }
+
+    .btn-primary {
+
+      background:
+        var(--green-main);
+
+      box-shadow:
+        0 10px 22px
+        rgba(18,63,47,.16);
+    }
+
+    .btn-secondary {
+
+      border-color:
+        rgba(23,79,58,.28);
+
+      background:
+        rgba(255,253,248,.72);
+
+      color:
+        var(--green-dark);
     }
 
     @media (max-width: 860px) {
+
       .question-grid,
       .resource-grid,
       .article-grid,
       .story-panel {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
       }
 
       .help-grid,
       .start-steps {
-        grid-template-columns: repeat(2,minmax(0,1fr));
+
+        grid-template-columns:
+          repeat(2,minmax(0,1fr));
       }
 
       .story-panel,
       .start-panel {
+
         padding: 30px;
       }
+
     }
 
     @media (max-width: 560px) {
+
       .hero-new {
-        padding: 66px 0 54px;
+        padding:
+          66px 0 54px;
       }
 
       .help-grid,
       .start-steps {
-        grid-template-columns: 1fr;
+
+        grid-template-columns:
+          1fr;
       }
 
       .question-card,
       .help-card,
       .resource-card,
       .article-card {
+
         padding: 22px;
       }
 
       .story-panel,
       .start-panel {
+
         padding: 24px;
         border-radius: 20px;
       }
+
+      .contact-cta-inner {
+
+        padding:
+          28px 22px;
+
+        border-radius:
+          20px;
+      }
+
     }
+
   </style>
 
 </head>
@@ -363,50 +672,66 @@
 
     <a class="brand" href="/">
 
-      <img src="/goodground-logo.png" alt="GoodGround">
+      <img
+        src="/goodground-logo.png"
+        alt="GoodGround"
+      >
 
       <div class="brand-text">
-        <strong>GOODGROUND</strong>
-        <span>BUILT ON TRUST</span>
+
+        <strong>
+          GOODGROUND
+        </strong>
+
+        <span>
+          BUILT ON TRUST
+        </span>
+
       </div>
 
     </a>
 
     <div class="links">
 
-      <a href="#home"
-         data-en="Home"
-         data-pt="Início">
+      <a
+        href="#home"
+        data-en="Home"
+        data-pt="Início">
         Home
       </a>
 
-      <a href="#questions"
-         data-en="Start Here"
-         data-pt="Comece Aqui">
+      <a
+        href="#questions"
+        data-en="Start Here"
+        data-pt="Comece Aqui">
         Start Here
       </a>
 
-      <a href="#about"
-         data-en="About"
-         data-pt="Sobre">
+      <a
+        href="#about"
+        data-en="About"
+        data-pt="Sobre">
         About
       </a>
 
-      <a href="#blog"
-         data-en="Answers"
-         data-pt="Respostas">
+      <a
+        href="#blog"
+        data-en="Answers"
+        data-pt="Respostas">
         Answers
       </a>
 
-      <a href="#resources"
-         data-en="Tools & Resources"
-         data-pt="Ferramentas e Recursos">
+      <a
+        href="#resources"
+        data-en="Tools & Resources"
+        data-pt="Ferramentas e Recursos">
         Tools &amp; Resources
       </a>
 
-      <a href="/contact.html"
-         data-en="Contact"
-         data-pt="Contato">
+      <a
+        href="/contact.html"
+        data-en="Contact"
+        data-pt="Contato">
         Contact
       </a>
 
@@ -438,9 +763,13 @@
 
 </header>
 
+
 <main>
 
-<section id="home" class="hero-new">
+
+<section
+  id="home"
+  class="hero-new">
 
   <div class="wrap hero-inner">
 
@@ -494,35 +823,42 @@
 
     </div>
 
-    <div class="hero-question-strip"
-         aria-label="Popular questions">
+    <div class="hero-question-strip">
 
       <a
         href="#answer-income"
         data-en="Can I really make money online?"
         data-pt="É realmente possível ganhar dinheiro online?">
+
         Can I really make money online?
+
       </a>
 
       <a
         href="#answer-affiliate"
         data-en="Is affiliate marketing legitimate?"
         data-pt="Marketing de afiliados é legítimo?">
+
         Is affiliate marketing legitimate?
+
       </a>
 
       <a
         href="#answer-audience"
         data-en="Do I need a big audience?"
         data-pt="Preciso de uma audiência grande?">
+
         Do I need a big audience?
+
       </a>
 
       <a
         href="#answer-start"
         data-en="Where do I start?"
         data-pt="Por onde eu começo?">
+
         Where do I start?
+
       </a>
 
     </div>
@@ -540,7 +876,10 @@
 
 </section>
 
-<section id="questions" class="section">
+
+<section
+  id="questions"
+  class="section">
 
   <div class="wrap">
 
@@ -667,8 +1006,10 @@
 
 </section>
 
-<section id="answers"
-         class="section soft-background">
+
+<section
+  id="answers"
+  class="section soft-background">
 
   <div class="wrap">
 
@@ -690,8 +1031,9 @@
 
     </h2>
 
-    <div id="answer-income"
-         class="answer-block">
+    <div
+      id="answer-income"
+      class="answer-block">
 
       <h3
         data-en="Can you really make money online?"
@@ -705,14 +1047,15 @@
         data-en="Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income, and each requires a real value exchange, time, skill, audience, systems or some combination of them."
         data-pt="Sim, pessoas geram renda online de várias formas legítimas — incluindo serviços, produtos digitais, conteúdo, comércio eletrônico e marketing de afiliados. Nenhuma delas é renda garantida, e todas exigem uma troca real de valor, tempo, habilidade, audiência, sistemas ou uma combinação desses fatores.">
 
-        Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income, and each requires a real value exchange, time, skill, audience, systems or some combination of them.
+        Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income.
 
       </p>
 
     </div>
 
-    <div id="answer-affiliate"
-         class="answer-block">
+    <div
+      id="answer-affiliate"
+      class="answer-block">
 
       <h3
         data-en="Is affiliate marketing legitimate?"
@@ -726,14 +1069,15 @@
         data-en="Yes. Affiliate marketing is a business model in which a company may pay a commission when an eligible customer purchases through an affiliate’s referral. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income."
         data-pt="Sim. Marketing de afiliados é um modelo de negócio em que uma empresa pode pagar uma comissão quando um cliente elegível compra por meio da indicação de um afiliado. O importante é escolher programas confiáveis, divulgar a relação de afiliado e nunca tratar comissões como renda garantida.">
 
-        Yes. Affiliate marketing is a business model in which a company may pay a commission when an eligible customer purchases through an affiliate’s referral. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income.
+        Yes. Affiliate marketing is a legitimate business model. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income.
 
       </p>
 
     </div>
 
-    <div id="answer-audience"
-         class="answer-block">
+    <div
+      id="answer-audience"
+      class="answer-block">
 
       <h3
         data-en="Do you need thousands or millions of followers?"
@@ -747,14 +1091,15 @@
         data-en="No fixed follower count guarantees success. A smaller audience that cares about the problem you address can be more useful than a large audience with little interest. GoodGround focuses on relevance, trust and useful content rather than chasing vanity numbers."
         data-pt="Nenhuma quantidade específica de seguidores garante resultado. Uma audiência menor que se importa com o problema que você aborda pode ser mais útil do que uma audiência enorme sem interesse. A GoodGround foca em relevância, confiança e conteúdo útil, não em números de vaidade.">
 
-        No fixed follower count guarantees success. A smaller audience that cares about the problem you address can be more useful than a large audience with little interest. GoodGround focuses on relevance, trust and useful content rather than chasing vanity numbers.
+        No fixed follower count guarantees success. Relevance, trust and useful content matter.
 
       </p>
 
     </div>
 
-    <div id="answer-start"
-         class="answer-block">
+    <div
+      id="answer-start"
+      class="answer-block">
 
       <h3
         data-en="So where should you start?"
@@ -768,7 +1113,7 @@
         data-en="Start with the problem, not the product. Decide who you want to help, understand the problem they are trying to solve, learn the available options and choose one small next step you can actually test."
         data-pt="Comece pelo problema, não pelo produto. Decida quem você quer ajudar, entenda o problema que essa pessoa está tentando resolver, conheça as opções disponíveis e escolha um pequeno próximo passo que você realmente possa testar.">
 
-        Start with the problem, not the product. Decide who you want to help, understand the problem they are trying to solve, learn the available options and choose one small next step you can actually test.
+        Start with the problem, not the product.
 
       </p>
 
@@ -778,8 +1123,10 @@
 
 </section>
 
-<section id="about"
-         class="section">
+
+<section
+  id="about"
+  class="section">
 
   <div class="wrap">
 
@@ -813,7 +1160,7 @@
           data-en="I’m a mother. After leaving public service, I went through a very difficult period with depression and psoriasis. That experience changed the way I looked at work, health, time and quality of life."
           data-pt="Eu sou mãe. Depois de sair do serviço público, passei por um período muito difícil com depressão e psoríase. Essa experiência mudou a maneira como eu enxergava trabalho, saúde, tempo e qualidade de vida.">
 
-          I’m a mother. After leaving public service, I went through a very difficult period with depression and psoriasis. That experience changed the way I looked at work, health, time and quality of life.
+          I’m a mother. After leaving public service, I went through a very difficult period with depression and psoriasis.
 
         </p>
 
@@ -821,7 +1168,7 @@
           data-en="Working from home helped me see another possibility: building something that can grow while leaving more room for life. I’m still learning and building, and GoodGround is where I share what I discover along the way."
           data-pt="Trabalhar de casa me fez enxergar outra possibilidade: construir algo que possa crescer e, ao mesmo tempo, deixar mais espaço para viver. Eu continuo aprendendo e construindo, e a GoodGround é onde compartilho o que descubro nesse caminho.">
 
-          Working from home helped me see another possibility: building something that can grow while leaving more room for life. I’m still learning and building, and GoodGround is where I share what I discover along the way.
+          Working from home helped me see another possibility: building something that can grow while leaving more room for life.
 
         </p>
 
@@ -829,7 +1176,7 @@
           data-en="The goal is not to promise that someone else will have the same outcome. It is to make the path clearer, share what we learn, research options carefully and help people make their own decisions."
           data-pt="O objetivo não é prometer que outra pessoa terá o mesmo resultado. É tornar o caminho mais claro, compartilhar o que aprendemos, pesquisar opções com cuidado e ajudar as pessoas a tomar suas próprias decisões.">
 
-          The goal is not to promise that someone else will have the same outcome. It is to make the path clearer, share what we learn, research options carefully and help people make their own decisions.
+          The goal is to make the path clearer, share what we learn and help people make their own decisions.
 
         </p>
 
@@ -841,8 +1188,10 @@
 
 </section>
 
-<section id="how"
-         class="section soft-background">
+
+<section
+  id="how"
+  class="section soft-background">
 
   <div class="wrap">
 
@@ -868,7 +1217,9 @@
 
       <div class="help-card">
 
-        <span class="step-number">1</span>
+        <span class="step-number">
+          1
+        </span>
 
         <h3
           data-en="Research"
@@ -888,7 +1239,9 @@
 
       <div class="help-card">
 
-        <span class="step-number">2</span>
+        <span class="step-number">
+          2
+        </span>
 
         <h3
           data-en="Explain"
@@ -908,7 +1261,9 @@
 
       <div class="help-card">
 
-        <span class="step-number">3</span>
+        <span class="step-number">
+          3
+        </span>
 
         <h3
           data-en="Compare"
@@ -928,7 +1283,9 @@
 
       <div class="help-card">
 
-        <span class="step-number">4</span>
+        <span class="step-number">
+          4
+        </span>
 
         <h3
           data-en="You decide"
@@ -952,8 +1309,10 @@
 
 </section>
 
-<section id="start-here"
-         class="section">
+
+<section
+  id="start-here"
+  class="section">
 
   <div class="wrap">
 
@@ -1037,8 +1396,10 @@
 
 </section>
 
-<section id="blog"
-         class="section soft-background">
+
+<section
+  id="blog"
+  class="section soft-background">
 
   <div class="wrap">
 
@@ -1062,10 +1423,10 @@
 
     <p
       class="section-intro"
-      data-en="Our upcoming guides are organized around real questions — with direct answers first and practical detail after."
-      data-pt="Nossos próximos guias serão organizados em torno de perguntas reais — primeiro uma resposta direta, depois os detalhes práticos.">
+      data-en="Our guides are organized around real questions — with direct answers first and practical detail after."
+      data-pt="Nossos guias são organizados em torno de perguntas reais — primeiro uma resposta direta, depois os detalhes práticos.">
 
-      Our upcoming guides are organized around real questions — with direct answers first and practical detail after.
+      Our guides are organized around real questions — with direct answers first and practical detail after.
 
     </p>
 
@@ -1102,6 +1463,7 @@
 
       </a>
 
+
       <article class="article-card">
 
         <span
@@ -1131,6 +1493,7 @@
 
       </article>
 
+
       <article class="article-card">
 
         <span
@@ -1159,6 +1522,7 @@
         </p>
 
       </article>
+
 
       <article class="article-card">
 
@@ -1195,8 +1559,10 @@
 
 </section>
 
-<section id="resources"
-         class="section">
+
+<section
+  id="resources"
+  class="section">
 
   <div class="wrap">
 
@@ -1223,7 +1589,7 @@
       data-en="We’re building small resources that help you act on what you just learned. We’ll start with one excellent resource and grow the library carefully."
       data-pt="Estamos criando pequenos recursos que ajudam você a agir sobre o que acabou de aprender. Vamos começar com um excelente recurso e ampliar a biblioteca com cuidado.">
 
-      We’re building small resources that help you act on what you just learned. We’ll start with one excellent resource and grow the library carefully.
+      We’re building small resources that help you act on what you just learned.
 
     </p>
 
@@ -1258,6 +1624,7 @@
 
       </div>
 
+
       <div class="resource-card">
 
         <span
@@ -1289,6 +1656,7 @@
 
     </div>
 
+
     <div class="trust-note">
 
       <strong
@@ -1313,8 +1681,10 @@
 
 </section>
 
-<section id="reviews"
-         class="section dark-section">
+
+<section
+  id="reviews"
+  class="section dark-section">
 
   <div class="wrap">
 
@@ -1359,6 +1729,7 @@
 
 </section>
 
+
 <section class="section contact-cta">
 
   <div class="wrap contact-cta-inner">
@@ -1397,17 +1768,13 @@
 
 </section>
 
+
 </main>
 
-<!-- ===================================================== -->
-<!-- FOOTER -->
-<!-- ===================================================== -->
 
 <footer class="footer">
 
   <div class="wrap footer-main">
-
-    <!-- GOODGROUND -->
 
     <div class="footer-column footer-about">
 
@@ -1415,7 +1782,8 @@
 
         <img
           src="/goodground-logo.png"
-          alt="GoodGround">
+          alt="GoodGround"
+        >
 
         <div>
 
@@ -1435,9 +1803,7 @@
         data-en="An independent digital publication about marketing, AI, automation, email, websites, productivity and online business — written for humans, built on trust."
         data-pt="Uma publicação digital independente sobre marketing, inteligência artificial, automação, e-mail, sites, produtividade e negócios online — feita para pessoas e construída sobre confiança.">
 
-        An independent digital publication about marketing,
-        AI, automation, email, websites, productivity and
-        online business — written for humans, built on trust.
+        An independent digital publication about marketing, AI, automation, email, websites, productivity and online business — written for humans, built on trust.
 
       </p>
 
@@ -1447,75 +1813,57 @@
 
     </div>
 
-    <!-- EXPLORE -->
 
     <div class="footer-column">
 
-      <h4
-        data-en="EXPLORE"
-        data-pt="EXPLORE">
-
+      <h4>
         EXPLORE
-
       </h4>
 
       <a
         href="#home"
         data-en="Home"
         data-pt="Início">
-
         Home
-
       </a>
 
       <a
         href="#about"
         data-en="About"
         data-pt="Sobre">
-
         About
-
       </a>
 
       <a
         href="#blog"
         data-en="Blog"
         data-pt="Blog">
-
         Blog
-
       </a>
 
       <a
         href="#resources"
         data-en="Tools & Resources"
         data-pt="Ferramentas e Recursos">
-
-        Tools &amp; Resources
-
+        Tools & Resources
       </a>
 
       <a
         href="#reviews"
         data-en="Reviews"
         data-pt="Avaliações">
-
         Reviews
-
       </a>
 
       <a
         href="/contact.html"
         data-en="Contact"
         data-pt="Contato">
-
         Contact
-
       </a>
 
     </div>
 
-    <!-- LEGAL -->
 
     <div class="footer-column">
 
@@ -1527,46 +1875,35 @@
         href="/privacy.html"
         data-en="Privacy Policy"
         data-pt="Política de Privacidade">
-
         Privacy Policy
-
       </a>
 
       <a
         href="/terms.html"
         data-en="Terms of Use"
         data-pt="Termos de Uso">
-
         Terms of Use
-
       </a>
 
       <a
         href="/affiliate-disclosure.html"
         data-en="Affiliate Disclosure"
         data-pt="Divulgação de Afiliados">
-
         Affiliate Disclosure
-
       </a>
 
     </div>
 
-    <!-- CONNECT -->
 
     <div class="footer-column footer-connect">
 
       <h4
         data-en="CONNECT"
         data-pt="CONECTE-SE">
-
         CONNECT
-
       </h4>
 
       <div class="social-icons">
-
-        <!-- INSTAGRAM -->
 
         <a
           href="https://www.instagram.com/goodground.site/"
@@ -1575,41 +1912,9 @@
           target="_blank"
           rel="noopener noreferrer">
 
-          <svg
-            viewBox="0 0 24 24"
-            width="20"
-            height="20"
-            aria-hidden="true">
-
-            <rect
-              x="3"
-              y="3"
-              width="18"
-              height="18"
-              rx="5"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"/>
-
-            <circle
-              cx="12"
-              cy="12"
-              r="4"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"/>
-
-            <circle
-              cx="17.5"
-              cy="6.5"
-              r="1"
-              fill="currentColor"/>
-
-          </svg>
+          Instagram
 
         </a>
-
-        <!-- FACEBOOK -->
 
         <a
           href="https://www.facebook.com/people/GoodGround/61593695165469/"
@@ -1618,17 +1923,7 @@
           target="_blank"
           rel="noopener noreferrer">
 
-          <svg
-            viewBox="0 0 24 24"
-            width="20"
-            height="20"
-            aria-hidden="true">
-
-            <path
-              d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"
-              fill="currentColor"/>
-
-          </svg>
+          Facebook
 
         </a>
 
@@ -1646,7 +1941,6 @@
 
   </div>
 
-  <!-- TRANSPARENCY -->
 
   <div class="wrap footer-bottom">
 
@@ -1654,9 +1948,7 @@
       data-en="Transparency: some links on this site are affiliate links. If you buy through them, GOODGROUND may earn a commission at no extra cost to you. This never decides what we recommend."
       data-pt="Transparência: alguns links deste site são links de afiliados. Se você comprar por meio deles, a GOODGROUND poderá receber uma comissão sem nenhum custo adicional para você. Isso nunca determina o que recomendamos.">
 
-      Transparency: some links on this site are affiliate links.
-      If you buy through them, GOODGROUND may earn a commission
-      at no extra cost to you. This never decides what we recommend.
+      Transparency: some links on this site are affiliate links. If you buy through them, GOODGROUND may earn a commission at no extra cost to you. This never decides what we recommend.
 
     </p>
 
@@ -1678,34 +1970,31 @@
 
 </footer>
 
-<!-- ===================================================== -->
-<!-- EN / PT -->
-<!-- ===================================================== -->
 
 <script>
 
 function setLanguage(language) {
 
   const elements =
-    document.querySelectorAll('[data-en][data-pt]');
+    document.querySelectorAll(
+      '[data-en][data-pt]'
+    );
 
-  elements.forEach(function(element) {
-
-    if (language === 'pt') {
-
-      element.textContent =
-        element.getAttribute('data-pt');
-
-    } else {
+  elements.forEach(
+    function(element) {
 
       element.textContent =
-        element.getAttribute('data-en');
+        language === 'pt'
+          ? element.getAttribute('data-pt')
+          : element.getAttribute('data-en');
 
     }
+  );
 
-  });
-
-  document.documentElement.lang = language;
+  document.documentElement.lang =
+    language === 'pt'
+      ? 'pt-BR'
+      : 'en';
 
   document
     .getElementById('lang-en')
@@ -1754,20 +2043,25 @@ function setLanguage(language) {
 
 }
 
+
 document.addEventListener(
   'DOMContentLoaded',
   function() {
 
     const savedLanguage =
-      localStorage.getItem('goodground-language') || 'en';
+      localStorage.getItem(
+        'goodground-language'
+      ) || 'en';
 
-    setLanguage(savedLanguage);
+    setLanguage(
+      savedLanguage
+    );
 
   }
 );
 
 </script>
 
-</body>
 
+</body>
 </html>
