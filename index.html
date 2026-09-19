@@ -3,62 +3,76 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 
   <title>GoodGround — Clear Answers for Starting & Growing Online</title>
 
-  <meta
-    id="meta-description"
-    name="description"
-    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
-  >
+  <meta id="meta-description" name="description" content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
 
-  <meta
-    name="robots"
-    content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
-  >
+  <meta name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-  <link rel="canonical" href="https://goodground.site/">
-  <meta name="theme-color" content="#174f3a">
+  <link rel="canonical"
+        href="https://goodground.site/">
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="GoodGround">
+  <meta name="theme-color"
+        content="#174f3a">
 
-  <meta
-    property="og:title"
-    content="GoodGround — Clear Answers for Starting & Growing Online"
-  >
+  <!-- OPEN GRAPH / FACEBOOK -->
+  <meta property="og:type"
+        content="website">
 
-  <meta
-    property="og:description"
-    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
-  >
+  <meta property="og:site_name"
+        content="GoodGround">
 
-  <meta property="og:url" content="https://goodground.site/">
-  <meta property="og:image" content="https://goodground.site/goodground-logo.png">
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="pt_BR">
+  <meta property="og:title"
+        content="GoodGround — Clear Answers for Starting & Growing Online">
 
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:description"
+        content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
 
-  <meta
-    name="twitter:title"
-    content="GoodGround — Clear Answers for Starting & Growing Online"
-  >
+  <meta property="og:url"
+        content="https://goodground.site/">
 
-  <meta
-    name="twitter:description"
-    content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust."
-  >
+  <meta property="og:image"
+        content="https://goodground.site/goodground-logo.png">
 
-  <meta
-    name="twitter:image"
-    content="https://goodground.site/goodground-logo.png"
-  >
+  <meta property="og:image:alt"
+        content="GoodGround — Clear Answers for Starting & Growing Online">
 
-  <link rel="icon" href="/goodground-logo.png">
-  <link rel="stylesheet" href="/styles.css">
+  <meta property="og:locale"
+        content="en_US">
 
+  <meta property="og:locale:alternate"
+        content="pt_BR">
+
+  <!-- TWITTER / X -->
+  <meta name="twitter:card"
+        content="summary_large_image">
+
+  <meta name="twitter:title"
+        content="GoodGround — Clear Answers for Starting & Growing Online">
+
+  <meta name="twitter:description"
+        content="Clear, practical answers about making money online, affiliate marketing, digital tools, AI and starting an online business — built on trust.">
+
+  <meta name="twitter:image"
+        content="https://goodground.site/goodground-logo.png">
+
+  <meta name="twitter:image:alt"
+        content="GoodGround — Clear Answers for Starting & Growing Online">
+
+  <!-- FAVICON -->
+  <link rel="icon"
+        href="/goodground-logo.png">
+
+  <!-- STYLES -->
+  <link rel="stylesheet"
+        href="/styles.css">
+
+  <!-- STRUCTURED DATA -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -85,33 +99,195 @@
   </script>
 
   <style>
+    .hero-new {
+      position: relative;
+      overflow: hidden;
+      padding: 88px 0 76px;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(54, 111, 78, .14), transparent 30%),
+        linear-gradient(180deg, #fbfaf5 0%, #f4f7f2 100%);
+    }
+    .hero-new .hero-inner { max-width: 920px; }
+    .hero-new h1 {
+      max-width: 860px;
+      margin: 16px 0 22px;
+      font-size: clamp(2.7rem, 6vw, 5.4rem);
+      line-height: .98;
+      letter-spacing: -.045em;
+    }
+    .hero-new .hero-lead {
+      max-width: 760px;
+      font-size: clamp(1.08rem, 2vw, 1.32rem);
+      line-height: 1.7;
+    }
+    .hero-question-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 30px 0 0;
+    }
+    .hero-question-strip a {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 14px;
+      border: 1px solid rgba(23,79,58,.18);
+      border-radius: 999px;
+      background: rgba(255,255,255,.72);
+      color: inherit;
+      text-decoration: none;
+      font-size: .94rem;
+      font-weight: 700;
+    }
+    .hero-question-strip a:hover { transform: translateY(-1px); }
+    .brand-line {
+      margin-top: 28px;
+      font-size: .92rem;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      opacity: .72;
+    }
+
+    .question-grid, .help-grid, .resource-grid, .article-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+    .question-card, .help-card, .resource-card, .article-card {
+      display: block;
+      padding: 26px;
+      border: 1px solid rgba(23,79,58,.13);
+      border-radius: 20px;
+      background: #fff;
+      box-shadow: 0 10px 32px rgba(23,79,58,.06);
+      text-decoration: none;
+      color: inherit;
+    }
+    .question-card:hover, .article-card:hover, .resource-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 38px rgba(23,79,58,.09);
+    }
+    .question-card h3, .help-card h3, .resource-card h3, .article-card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+    .question-card p, .help-card p, .resource-card p, .article-card p { margin-bottom: 0; }
+
+    .story-panel {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 42px;
+      align-items: center;
+      padding: 44px;
+      border-radius: 28px;
+      background: #eef4ee;
+    }
+    .story-quote {
+      font-size: clamp(1.9rem, 3.3vw, 3.1rem);
+      line-height: 1.08;
+      letter-spacing: -.025em;
+      margin: 0;
+    }
+    .story-copy p { font-size: 1.06rem; line-height: 1.78; }
+
+    .help-grid { grid-template-columns: repeat(4, minmax(0,1fr)); }
+    .step-number {
+      display: inline-flex;
+      width: 38px;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: #174f3a;
+      color: #fff;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .answer-block {
+      border-top: 1px solid rgba(23,79,58,.13);
+      padding: 30px 0;
+    }
+    .answer-block:first-child { border-top: 0; }
+    .answer-block h3 { margin-bottom: 10px; }
+    .answer-block p { max-width: 830px; }
+
+    .start-panel {
+      padding: 48px;
+      border-radius: 28px;
+      background: #174f3a;
+      color: #fff;
+    }
+    .start-panel .section-title,
+    .start-panel p { color: #fff; }
+    .start-steps {
+      display: grid;
+      grid-template-columns: repeat(4,minmax(0,1fr));
+      gap: 14px;
+      margin: 28px 0;
+    }
+    .start-step {
+      padding: 18px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.08);
+    }
+
+    .resource-card .tag, .article-card .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      font-size: .78rem;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      opacity: .72;
+    }
+    .section-note {
+      max-width: 760px;
+      margin-top: 18px;
+      opacity: .82;
+    }
+    .trust-note {
+      margin-top: 28px;
+      padding: 18px 20px;
+      border-left: 4px solid #174f3a;
+      background: #f7f8f4;
+    }
+
+    @media (max-width: 860px) {
+      .question-grid, .resource-grid, .article-grid, .story-panel { grid-template-columns: 1fr; }
+      .help-grid, .start-steps { grid-template-columns: repeat(2,minmax(0,1fr)); }
+      .story-panel, .start-panel { padding: 30px; }
+    }
+    @media (max-width: 560px) {
+      .hero-new { padding: 66px 0 54px; }
+      .help-grid, .start-steps { grid-template-columns: 1fr; }
+      .question-card, .help-card, .resource-card, .article-card { padding: 22px; }
+      .story-panel, .start-panel { padding: 24px; border-radius: 20px; }
+    }
+
+
+    /* ===================================================== */
+    /* GOODGROUND — CONTRASTE VISUAL REFORÇADO              */
+    /* Mais profundidade sem perder o estilo claro/editorial */
+    /* ===================================================== */
 
     :root {
-      --green-dark: #123f2f;
-      --green-main: #174f3a;
-      --green-medium: #2f6b4d;
-      --green-light: #dce8dc;
-      --green-soft: #e5ece1;
-      --cream: #f1ede1;
-      --cream-light: #f7f4eb;
-      --card: #fffdf8;
-      --text: #17382a;
-      --muted: #40584c;
-      --border: rgba(23,79,58,.18);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
+      --gg-green-deep: #123f2f;
+      --gg-green-main: #174f3a;
+      --gg-green-mid: #2f6b4d;
+      --gg-green-soft: #dce8dc;
+      --gg-green-soft-2: #e7eee3;
+      --gg-cream: #f1ede1;
+      --gg-cream-light: #f7f4eb;
+      --gg-card: #fffdf8;
+      --gg-text: #17382a;
+      --gg-muted: #53675c;
+      --gg-border: rgba(23,79,58,.18);
     }
 
     body {
-      margin: 0;
-      background: var(--cream-light);
-      color: var(--text);
+      background: var(--gg-cream-light);
+      color: var(--gg-text);
     }
 
     .site-header {
@@ -121,396 +297,99 @@
       backdrop-filter: blur(10px);
     }
 
+    .brand-text strong,
+    .section-title,
+    .story-quote,
+    h1, h2, h3 {
+      color: var(--gg-green-deep);
+    }
+
+    .links a,
+    .language-link {
+      color: var(--gg-green-deep);
+    }
+
     .hero-new {
-      position: relative;
-      overflow: hidden;
-      padding: 88px 0 76px;
-
       background:
-        radial-gradient(
-          circle at 82% 14%,
-          rgba(47,107,77,.22),
-          transparent 31%
-        ),
-        radial-gradient(
-          circle at 15% 85%,
-          rgba(23,79,58,.10),
-          transparent 28%
-        ),
-        linear-gradient(
-          180deg,
-          #f5f0e3 0%,
-          #e8eee3 100%
-        );
-
+        radial-gradient(circle at 82% 14%, rgba(47,107,77,.22), transparent 31%),
+        radial-gradient(circle at 15% 85%, rgba(23,79,58,.10), transparent 28%),
+        linear-gradient(180deg, #f5f0e3 0%, #e8eee3 100%);
       border-bottom: 1px solid rgba(23,79,58,.10);
     }
 
-    .hero-new .hero-inner {
-      max-width: 920px;
-    }
-
-    .hero-new h1 {
-      max-width: 860px;
-      margin: 16px 0 22px;
-
-      font-size: clamp(
-        2.7rem,
-        6vw,
-        5.4rem
-      );
-
-      line-height: .98;
-      letter-spacing: -.045em;
-      color: var(--green-dark);
-    }
-
-    .hero-new .hero-lead {
-      max-width: 760px;
-      font-size: clamp(1.08rem, 2vw, 1.32rem);
-      line-height: 1.7;
-      color: var(--muted);
-    }
-
-    .hero-question-strip {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin: 30px 0 0;
+    .hero-new .hero-lead,
+    .section-intro,
+    .story-copy p,
+    .answer-block p,
+    .question-card p,
+    .help-card p,
+    .resource-card p,
+    .article-card p {
+      color: #40584c;
     }
 
     .hero-question-strip a {
-      display: inline-flex;
-      align-items: center;
-
-      padding: 10px 14px;
-
-      border: 1px solid rgba(23,79,58,.24);
-      border-radius: 999px;
-
       background: rgba(255,253,248,.90);
-
-      color: var(--green-dark);
-      text-decoration: none;
-
-      font-size: .94rem;
-      font-weight: 700;
-
-      box-shadow:
-        0 6px 16px
-        rgba(18,63,47,.05);
-    }
-
-    .hero-question-strip a:hover {
-      transform: translateY(-1px);
-    }
-
-    .brand-line {
-      margin-top: 28px;
-
-      font-size: .92rem;
-      letter-spacing: .13em;
-
-      text-transform: uppercase;
-
-      color: var(--green-dark);
-      opacity: .78;
+      border-color: rgba(23,79,58,.24);
+      box-shadow: 0 6px 16px rgba(18,63,47,.05);
     }
 
     .section {
-      background: var(--cream-light);
+      background: #f7f4eb;
     }
 
     .soft-background {
-      background: var(--green-soft) !important;
-    }
-
-    .question-grid,
-    .resource-grid,
-    .article-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(2, minmax(0,1fr));
-
-      gap: 18px;
-      margin-top: 34px;
-    }
-
-    .help-grid {
-      display: grid;
-
-      grid-template-columns:
-        repeat(4, minmax(0,1fr));
-
-      gap: 18px;
-      margin-top: 34px;
+      background: #e5ece1 !important;
     }
 
     .question-card,
     .help-card,
     .resource-card,
     .article-card {
-
-      display: block;
-
-      padding: 26px;
-
-      border:
-        1px solid
-        var(--border);
-
-      border-radius: 20px;
-
-      background:
-        var(--card);
-
-      box-shadow:
-        0 12px 30px
-        rgba(18,63,47,.09);
-
-      color: inherit;
-      text-decoration: none;
+      background: var(--gg-card);
+      border: 1px solid var(--gg-border);
+      box-shadow: 0 12px 30px rgba(18,63,47,.09);
     }
 
     .question-card:hover,
     .article-card:hover,
     .resource-card:hover {
-
-      transform:
-        translateY(-3px);
-
-      box-shadow:
-        0 16px 38px
-        rgba(18,63,47,.14);
-
-      border-color:
-        rgba(23,79,58,.28);
-    }
-
-    .question-card h3,
-    .help-card h3,
-    .resource-card h3,
-    .article-card h3 {
-
-      margin-top: 0;
-      margin-bottom: 10px;
-
-      color:
-        var(--green-dark);
-    }
-
-    .question-card p,
-    .help-card p,
-    .resource-card p,
-    .article-card p {
-
-      margin-bottom: 0;
-      color: var(--muted);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 38px rgba(18,63,47,.14);
+      border-color: rgba(23,79,58,.28);
     }
 
     .story-panel {
-
-      display: grid;
-
-      grid-template-columns:
-        .85fr 1.15fr;
-
-      gap: 42px;
-      align-items: center;
-
-      padding: 44px;
-
-      border-radius: 28px;
-
       background:
-        linear-gradient(
-          135deg,
-          #dce8dc 0%,
-          #e8eee3 100%
-        );
-
-      border:
-        1px solid
-        rgba(23,79,58,.14);
-
-      box-shadow:
-        0 16px 38px
-        rgba(18,63,47,.08);
-    }
-
-    .story-quote {
-      font-size:
-        clamp(
-          1.9rem,
-          3.3vw,
-          3.1rem
-        );
-
-      line-height: 1.08;
-      letter-spacing: -.025em;
-
-      margin: 0;
-
-      color:
-        var(--green-dark);
-    }
-
-    .story-copy p {
-
-      font-size: 1.06rem;
-      line-height: 1.78;
-
-      color: var(--muted);
-    }
-
-    .step-number {
-
-      display: inline-flex;
-
-      width: 38px;
-      height: 38px;
-
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 50%;
-
-      background:
-        var(--green-main);
-
-      color: #fff;
-
-      font-weight: 800;
-
-      margin-bottom: 16px;
+        linear-gradient(135deg, #dce8dc 0%, #e8eee3 100%);
+      border: 1px solid rgba(23,79,58,.14);
+      box-shadow: 0 16px 38px rgba(18,63,47,.08);
     }
 
     .answer-block {
-
-      border-top:
-        1px solid
-        rgba(23,79,58,.20);
-
-      padding: 30px 0;
-    }
-
-    .answer-block:first-child {
-      border-top: 0;
-    }
-
-    .answer-block h3 {
-      margin-bottom: 10px;
-      color: var(--green-dark);
-    }
-
-    .answer-block p {
-      max-width: 830px;
-      color: var(--muted);
+      border-top-color: rgba(23,79,58,.20);
     }
 
     .start-panel {
-
-      padding: 48px;
-
-      border-radius: 28px;
-
       background:
-        linear-gradient(
-          135deg,
-          #123f2f 0%,
-          #1d5c43 100%
-        );
-
-      color: #fff;
-
-      box-shadow:
-        0 18px 44px
-        rgba(18,63,47,.18);
-    }
-
-    .start-panel .section-title,
-    .start-panel p {
-      color: #fff;
-    }
-
-    .start-steps {
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(4,minmax(0,1fr));
-
-      gap: 14px;
-
-      margin:
-        28px 0;
+        linear-gradient(135deg, #123f2f 0%, #1d5c43 100%);
+      box-shadow: 0 18px 44px rgba(18,63,47,.18);
     }
 
     .start-step {
-
-      padding: 18px;
-
-      border-radius: 16px;
-
-      background:
-        rgba(255,255,255,.12);
-
-      border:
-        1px solid
-        rgba(255,255,255,.12);
-    }
-
-    .resource-card .tag,
-    .article-card .tag {
-
-      display: inline-block;
-
-      margin-bottom: 12px;
-
-      font-size: .78rem;
-      font-weight: 800;
-
-      letter-spacing: .08em;
-      text-transform: uppercase;
-
-      opacity: .72;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.12);
     }
 
     .trust-note {
-
-      margin-top: 28px;
-
-      padding:
-        18px 20px;
-
-      border-left:
-        4px solid
-        var(--green-dark);
-
-      background:
-        #e4ebdf;
-
-      color:
-        var(--text);
+      background: #e4ebdf;
+      border-left-color: var(--gg-green-deep);
+      color: var(--gg-text);
     }
 
     .dark-section {
-
       background:
-        linear-gradient(
-          135deg,
-          #103a2b 0%,
-          #174f3a 65%,
-          #1f6046 100%
-        );
-    }
-
-    .dark-section .section-title,
-    .dark-section .eyebrow,
-    .dark-section p,
-    .dark-section a {
-      color: #fff;
+        linear-gradient(135deg, #103a2b 0%, #174f3a 65%, #1f6046 100%);
     }
 
     .contact-cta {
@@ -518,43 +397,16 @@
     }
 
     .contact-cta-inner {
-
-      background:
-        #f8f4e9;
-
-      border:
-        1px solid
-        rgba(23,79,58,.14);
-
-      border-radius:
-        26px;
-
-      box-shadow:
-        0 14px 34px
-        rgba(18,63,47,.08);
-
+      background: #f8f4e9;
+      border: 1px solid rgba(23,79,58,.14);
+      border-radius: 26px;
+      box-shadow: 0 14px 34px rgba(18,63,47,.08);
       padding: 42px;
     }
 
-    .section-title,
-    h2,
-    h3 {
-      color:
-        var(--green-dark);
-    }
-
-    .section-intro {
-      color:
-        var(--muted);
-    }
-
     .footer {
-
-      background:
-        #0f3528;
-
-      color:
-        #f5f3ea;
+      background: #0f3528;
+      color: #f5f3ea;
     }
 
     .footer a,
@@ -566,1215 +418,414 @@
     }
 
     .footer-bottom {
-
-      border-top:
-        1px solid
-        rgba(255,255,255,.14);
+      border-top: 1px solid rgba(255,255,255,.14);
     }
 
     .btn-primary {
-
-      background:
-        var(--green-main);
-
-      box-shadow:
-        0 10px 22px
-        rgba(18,63,47,.16);
+      background: var(--gg-green-main);
+      box-shadow: 0 10px 22px rgba(18,63,47,.16);
     }
 
     .btn-secondary {
-
-      border-color:
-        rgba(23,79,58,.28);
-
-      background:
-        rgba(255,253,248,.72);
-
-      color:
-        var(--green-dark);
-    }
-
-    @media (max-width: 860px) {
-
-      .question-grid,
-      .resource-grid,
-      .article-grid,
-      .story-panel {
-
-        grid-template-columns:
-          1fr;
-      }
-
-      .help-grid,
-      .start-steps {
-
-        grid-template-columns:
-          repeat(2,minmax(0,1fr));
-      }
-
-      .story-panel,
-      .start-panel {
-
-        padding: 30px;
-      }
-
+      border-color: rgba(23,79,58,.28);
+      background: rgba(255,253,248,.72);
+      color: var(--gg-green-deep);
     }
 
     @media (max-width: 560px) {
-
-      .hero-new {
-        padding:
-          66px 0 54px;
-      }
-
-      .help-grid,
-      .start-steps {
-
-        grid-template-columns:
-          1fr;
-      }
-
-      .question-card,
-      .help-card,
-      .resource-card,
-      .article-card {
-
-        padding: 22px;
-      }
-
-      .story-panel,
-      .start-panel {
-
-        padding: 24px;
+      .contact-cta-inner {
+        padding: 28px 22px;
         border-radius: 20px;
       }
-
-      .contact-cta-inner {
-
-        padding:
-          28px 22px;
-
-        border-radius:
-          20px;
-      }
-
     }
 
   </style>
 
 </head>
-
 <body>
 
 <header class="site-header">
-
   <nav class="wrap nav">
-
     <a class="brand" href="/">
-
-      <img
-        src="/goodground-logo.png"
-        alt="GoodGround"
-      >
-
+      <img src="/goodground-logo.png" alt="GoodGround">
       <div class="brand-text">
-
-        <strong>
-          GOODGROUND
-        </strong>
-
-        <span>
-          BUILT ON TRUST
-        </span>
-
+        <strong>GOODGROUND</strong>
+        <span>BUILT ON TRUST</span>
       </div>
-
     </a>
 
     <div class="links">
-
-      <a
-        href="#home"
-        data-en="Home"
-        data-pt="Início">
-        Home
-      </a>
-
-      <a
-        href="#questions"
-        data-en="Start Here"
-        data-pt="Comece Aqui">
-        Start Here
-      </a>
-
-      <a
-        href="#about"
-        data-en="About"
-        data-pt="Sobre">
-        About
-      </a>
-
-      <a
-        href="#blog"
-        data-en="Answers"
-        data-pt="Respostas">
-        Answers
-      </a>
-
-      <a
-        href="#resources"
-        data-en="Tools & Resources"
-        data-pt="Ferramentas e Recursos">
-        Tools &amp; Resources
-      </a>
-
-      <a
-        href="/contact.html"
-        data-en="Contact"
-        data-pt="Contato">
-        Contact
-      </a>
-
+      <a href="#home" data-en="Home" data-pt="Início">Home</a>
+      <a href="#questions" data-en="Start Here" data-pt="Comece Aqui">Start Here</a>
+      <a href="#about" data-en="About" data-pt="Sobre">About</a>
+      <a href="#blog" data-en="Answers" data-pt="Respostas">Answers</a>
+      <a href="#resources" data-en="Tools & Resources" data-pt="Ferramentas e Recursos">Tools &amp; Resources</a>
+      <a href="/contact.html" data-en="Contact" data-pt="Contato">Contact</a>
     </div>
 
     <div class="languages">
-
-      <button
-        type="button"
-        id="lang-en"
-        class="language-link active"
-        onclick="setLanguage('en')">
-        EN
-      </button>
-
+      <button type="button" id="lang-en" class="language-link active" onclick="setLanguage('en')">EN</button>
       <span>|</span>
-
-      <button
-        type="button"
-        id="lang-pt"
-        class="language-link"
-        onclick="setLanguage('pt')">
-        PT
-      </button>
-
+      <button type="button" id="lang-pt" class="language-link" onclick="setLanguage('pt')">PT</button>
     </div>
-
   </nav>
-
 </header>
-
 
 <main>
 
-
-<section
-  id="home"
-  class="hero-new">
-
+<section id="home" class="hero-new">
   <div class="wrap hero-inner">
-
-    <div
-      class="kicker"
-      data-en="🌱 GOODGROUND — BUILT ON TRUST"
-      data-pt="🌱 GOODGROUND — CONSTRUÍDA SOBRE CONFIANÇA">
-
+    <div class="kicker" data-en="🌱 GOODGROUND — BUILT ON TRUST" data-pt="🌱 GOODGROUND — CONSTRUÍDA SOBRE CONFIANÇA">
       🌱 GOODGROUND — BUILT ON TRUST
-
     </div>
 
     <h1
       data-en="You don’t need millions of followers to build something online."
       data-pt="Você não precisa de milhões de seguidores para construir algo online.">
-
       You don’t need millions of followers to build something online.
-
     </h1>
 
-    <p
-      class="hero-lead"
+    <p class="hero-lead"
       data-en="If you’re trying to understand how to make money online, whether affiliate marketing is legitimate, which digital tools are worth your time, or where to begin, GoodGround is here to make the path clearer."
       data-pt="Se você está tentando entender como ganhar dinheiro online, se marketing de afiliados é legítimo, quais ferramentas digitais valem seu tempo ou por onde começar, a GoodGround existe para tornar esse caminho mais claro.">
-
       If you’re trying to understand how to make money online, whether affiliate marketing is legitimate, which digital tools are worth your time, or where to begin, GoodGround is here to make the path clearer.
-
     </p>
 
     <div class="hero-actions">
-
-      <a
-        class="btn btn-primary"
-        href="#questions"
-        data-en="Start with your question ↓"
-        data-pt="Comece pela sua pergunta ↓">
-
+      <a class="btn btn-primary" href="#questions" data-en="Start with your question ↓" data-pt="Comece pela sua pergunta ↓">
         Start with your question ↓
-
       </a>
-
-      <a
-        class="btn btn-secondary"
-        href="#about"
-        data-en="Why GoodGround exists"
-        data-pt="Por que a GoodGround existe">
-
+      <a class="btn btn-secondary" href="#about" data-en="Why GoodGround exists" data-pt="Por que a GoodGround existe">
         Why GoodGround exists
-
       </a>
-
     </div>
 
-    <div class="hero-question-strip">
-
-      <a
-        href="#answer-income"
-        data-en="Can I really make money online?"
-        data-pt="É realmente possível ganhar dinheiro online?">
-
-        Can I really make money online?
-
-      </a>
-
-      <a
-        href="#answer-affiliate"
-        data-en="Is affiliate marketing legitimate?"
-        data-pt="Marketing de afiliados é legítimo?">
-
-        Is affiliate marketing legitimate?
-
-      </a>
-
-      <a
-        href="#answer-audience"
-        data-en="Do I need a big audience?"
-        data-pt="Preciso de uma audiência grande?">
-
-        Do I need a big audience?
-
-      </a>
-
-      <a
-        href="#answer-start"
-        data-en="Where do I start?"
-        data-pt="Por onde eu começo?">
-
-        Where do I start?
-
-      </a>
-
+    <div class="hero-question-strip" aria-label="Popular questions">
+      <a href="#answer-income" data-en="Can I really make money online?" data-pt="É realmente possível ganhar dinheiro online?">Can I really make money online?</a>
+      <a href="#answer-affiliate" data-en="Is affiliate marketing legitimate?" data-pt="Marketing de afiliados é legítimo?">Is affiliate marketing legitimate?</a>
+      <a href="#answer-audience" data-en="Do I need a big audience?" data-pt="Preciso de uma audiência grande?">Do I need a big audience?</a>
+      <a href="#answer-start" data-en="Where do I start?" data-pt="Por onde eu começo?">Where do I start?</a>
     </div>
 
-    <div
-      class="brand-line"
-      data-en="Good things grow from good ground."
-      data-pt="Coisas boas crescem em solo fértil.">
-
+    <div class="brand-line" data-en="Good things grow from good ground." data-pt="Coisas boas crescem em solo fértil.">
       Good things grow from good ground.
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="questions"
-  class="section">
-
+<section id="questions" class="section">
   <div class="wrap">
-
-    <div
-      class="eyebrow"
-      data-en="START WITH YOUR QUESTION"
-      data-pt="COMECE PELA SUA PERGUNTA">
-
-      START WITH YOUR QUESTION
-
-    </div>
-
-    <h2
-      class="section-title"
+    <div class="eyebrow" data-en="START WITH YOUR QUESTION" data-pt="COMECE PELA SUA PERGUNTA">START WITH YOUR QUESTION</div>
+    <h2 class="section-title"
       data-en="What are you trying to figure out?"
       data-pt="O que você está tentando entender?">
-
       What are you trying to figure out?
-
     </h2>
-
-    <p
-      class="section-intro"
+    <p class="section-intro"
       data-en="Choose the question that sounds most like yours. We’ll help you understand the options before asking you to choose a tool, platform or offer."
       data-pt="Escolha a pergunta que mais parece com a sua. Vamos ajudar você a entender as opções antes de pedir que escolha uma ferramenta, plataforma ou oferta.">
-
       Choose the question that sounds most like yours. We’ll help you understand the options before asking you to choose a tool, platform or offer.
-
     </p>
 
     <div class="question-grid">
-
-      <a
-        class="question-card"
-        href="#answer-income">
-
-        <h3
-          data-en="Can I really make money online?"
-          data-pt="É realmente possível ganhar dinheiro online?">
-
-          Can I really make money online?
-
-        </h3>
-
-        <p
-          data-en="Understand common online income models, what they require and where the work actually happens."
-          data-pt="Entenda modelos comuns de renda online, o que eles exigem e onde o trabalho realmente acontece.">
-
+      <a class="question-card" href="#answer-income">
+        <h3 data-en="Can I really make money online?" data-pt="É realmente possível ganhar dinheiro online?">Can I really make money online?</h3>
+        <p data-en="Understand common online income models, what they require and where the work actually happens."
+           data-pt="Entenda modelos comuns de renda online, o que eles exigem e onde o trabalho realmente acontece.">
           Understand common online income models, what they require and where the work actually happens.
-
         </p>
-
       </a>
 
-      <a
-        class="question-card"
-        href="#answer-affiliate">
-
-        <h3
-          data-en="Is affiliate marketing legitimate?"
-          data-pt="Marketing de afiliados é legítimo?">
-
-          Is affiliate marketing legitimate?
-
-        </h3>
-
-        <p
-          data-en="Learn how affiliate marketing works, how commissions are earned and what to watch out for."
-          data-pt="Entenda como o marketing de afiliados funciona, como as comissões são geradas e quais cuidados tomar.">
-
+      <a class="question-card" href="#answer-affiliate">
+        <h3 data-en="Is affiliate marketing legitimate?" data-pt="Marketing de afiliados é legítimo?">Is affiliate marketing legitimate?</h3>
+        <p data-en="Learn how affiliate marketing works, how commissions are earned and what to watch out for."
+           data-pt="Entenda como o marketing de afiliados funciona, como as comissões são geradas e quais cuidados tomar.">
           Learn how affiliate marketing works, how commissions are earned and what to watch out for.
-
         </p>
-
       </a>
 
-      <a
-        class="question-card"
-        href="#answer-audience">
-
-        <h3
-          data-en="Can I start without thousands of followers?"
-          data-pt="Posso começar sem milhares de seguidores?">
-
-          Can I start without thousands of followers?
-
-        </h3>
-
-        <p
-          data-en="A large following is not the only path. Relevance, trust and reaching the right people matter."
-          data-pt="Uma audiência enorme não é o único caminho. Relevância, confiança e alcançar as pessoas certas importam.">
-
+      <a class="question-card" href="#answer-audience">
+        <h3 data-en="Can I start without thousands of followers?" data-pt="Posso começar sem milhares de seguidores?">Can I start without thousands of followers?</h3>
+        <p data-en="A large following is not the only path. Relevance, trust and reaching the right people matter."
+           data-pt="Uma audiência enorme não é o único caminho. Relevância, confiança e alcançar as pessoas certas importam.">
           A large following is not the only path. Relevance, trust and reaching the right people matter.
-
         </p>
-
       </a>
 
-      <a
-        class="question-card"
-        href="#answer-start">
-
-        <h3
-          data-en="Where do I start?"
-          data-pt="Por onde eu começo?">
-
-          Where do I start?
-
-        </h3>
-
-        <p
-          data-en="Start with one problem, understand your options and take one practical next step."
-          data-pt="Comece com um problema, entenda suas opções e dê um próximo passo prático.">
-
+      <a class="question-card" href="#answer-start">
+        <h3 data-en="Where do I start?" data-pt="Por onde eu começo?">Where do I start?</h3>
+        <p data-en="Start with one problem, understand your options and take one practical next step."
+           data-pt="Comece com um problema, entenda suas opções e dê um próximo passo prático.">
           Start with one problem, understand your options and take one practical next step.
-
         </p>
-
       </a>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="answers"
-  class="section soft-background">
-
+<section id="answers" class="section soft-background">
   <div class="wrap">
-
-    <div
-      class="eyebrow"
-      data-en="QUICK ANSWERS"
-      data-pt="RESPOSTAS RÁPIDAS">
-
-      QUICK ANSWERS
-
-    </div>
-
-    <h2
-      class="section-title"
-      data-en="Clear first answers. Deeper guides when you need them."
-      data-pt="Primeiras respostas claras. Guias mais completos quando você precisar.">
-
+    <div class="eyebrow" data-en="QUICK ANSWERS" data-pt="RESPOSTAS RÁPIDAS">QUICK ANSWERS</div>
+    <h2 class="section-title" data-en="Clear first answers. Deeper guides when you need them." data-pt="Primeiras respostas claras. Guias mais completos quando você precisar.">
       Clear first answers. Deeper guides when you need them.
-
     </h2>
 
-    <div
-      id="answer-income"
-      class="answer-block">
-
-      <h3
-        data-en="Can you really make money online?"
-        data-pt="É realmente possível ganhar dinheiro online?">
-
-        Can you really make money online?
-
-      </h3>
-
-      <p
-        data-en="Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income, and each requires a real value exchange, time, skill, audience, systems or some combination of them."
-        data-pt="Sim, pessoas geram renda online de várias formas legítimas — incluindo serviços, produtos digitais, conteúdo, comércio eletrônico e marketing de afiliados. Nenhuma delas é renda garantida, e todas exigem uma troca real de valor, tempo, habilidade, audiência, sistemas ou uma combinação desses fatores.">
-
-        Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income.
-
+    <div id="answer-income" class="answer-block">
+      <h3 data-en="Can you really make money online?" data-pt="É realmente possível ganhar dinheiro online?">Can you really make money online?</h3>
+      <p data-en="Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income, and each requires a real value exchange, time, skill, audience, systems or some combination of them."
+         data-pt="Sim, pessoas geram renda online de várias formas legítimas — incluindo serviços, produtos digitais, conteúdo, comércio eletrônico e marketing de afiliados. Nenhuma delas é renda garantida, e todas exigem uma troca real de valor, tempo, habilidade, audiência, sistemas ou uma combinação desses fatores.">
+        Yes, people earn income online in several legitimate ways — including services, digital products, content, ecommerce and affiliate marketing. None of these are guaranteed income, and each requires a real value exchange, time, skill, audience, systems or some combination of them.
       </p>
-
     </div>
 
-    <div
-      id="answer-affiliate"
-      class="answer-block">
-
-      <h3
-        data-en="Is affiliate marketing legitimate?"
-        data-pt="Marketing de afiliados é legítimo?">
-
-        Is affiliate marketing legitimate?
-
-      </h3>
-
-      <p
-        data-en="Yes. Affiliate marketing is a business model in which a company may pay a commission when an eligible customer purchases through an affiliate’s referral. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income."
-        data-pt="Sim. Marketing de afiliados é um modelo de negócio em que uma empresa pode pagar uma comissão quando um cliente elegível compra por meio da indicação de um afiliado. O importante é escolher programas confiáveis, divulgar a relação de afiliado e nunca tratar comissões como renda garantida.">
-
-        Yes. Affiliate marketing is a legitimate business model. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income.
-
+    <div id="answer-affiliate" class="answer-block">
+      <h3 data-en="Is affiliate marketing legitimate?" data-pt="Marketing de afiliados é legítimo?">Is affiliate marketing legitimate?</h3>
+      <p data-en="Yes. Affiliate marketing is a business model in which a company may pay a commission when an eligible customer purchases through an affiliate’s referral. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income."
+         data-pt="Sim. Marketing de afiliados é um modelo de negócio em que uma empresa pode pagar uma comissão quando um cliente elegível compra por meio da indicação de um afiliado. O importante é escolher programas confiáveis, divulgar a relação de afiliado e nunca tratar comissões como renda garantida.">
+        Yes. Affiliate marketing is a business model in which a company may pay a commission when an eligible customer purchases through an affiliate’s referral. The important part is choosing reputable programs, disclosing affiliate relationships and never treating commissions as guaranteed income.
       </p>
-
     </div>
 
-    <div
-      id="answer-audience"
-      class="answer-block">
-
-      <h3
-        data-en="Do you need thousands or millions of followers?"
-        data-pt="Você precisa de milhares ou milhões de seguidores?">
-
-        Do you need thousands or millions of followers?
-
-      </h3>
-
-      <p
-        data-en="No fixed follower count guarantees success. A smaller audience that cares about the problem you address can be more useful than a large audience with little interest. GoodGround focuses on relevance, trust and useful content rather than chasing vanity numbers."
-        data-pt="Nenhuma quantidade específica de seguidores garante resultado. Uma audiência menor que se importa com o problema que você aborda pode ser mais útil do que uma audiência enorme sem interesse. A GoodGround foca em relevância, confiança e conteúdo útil, não em números de vaidade.">
-
-        No fixed follower count guarantees success. Relevance, trust and useful content matter.
-
+    <div id="answer-audience" class="answer-block">
+      <h3 data-en="Do you need thousands or millions of followers?" data-pt="Você precisa de milhares ou milhões de seguidores?">Do you need thousands or millions of followers?</h3>
+      <p data-en="No fixed follower count guarantees success. A smaller audience that cares about the problem you address can be more useful than a large audience with little interest. GoodGround focuses on relevance, trust and useful content rather than chasing vanity numbers."
+         data-pt="Nenhuma quantidade específica de seguidores garante resultado. Uma audiência menor que se importa com o problema que você aborda pode ser mais útil do que uma audiência enorme sem interesse. A GoodGround foca em relevância, confiança e conteúdo útil, não em números de vaidade.">
+        No fixed follower count guarantees success. A smaller audience that cares about the problem you address can be more useful than a large audience with little interest. GoodGround focuses on relevance, trust and useful content rather than chasing vanity numbers.
       </p>
-
     </div>
 
-    <div
-      id="answer-start"
-      class="answer-block">
-
-      <h3
-        data-en="So where should you start?"
-        data-pt="Então, por onde você deve começar?">
-
-        So where should you start?
-
-      </h3>
-
-      <p
-        data-en="Start with the problem, not the product. Decide who you want to help, understand the problem they are trying to solve, learn the available options and choose one small next step you can actually test."
-        data-pt="Comece pelo problema, não pelo produto. Decida quem você quer ajudar, entenda o problema que essa pessoa está tentando resolver, conheça as opções disponíveis e escolha um pequeno próximo passo que você realmente possa testar.">
-
-        Start with the problem, not the product.
-
+    <div id="answer-start" class="answer-block">
+      <h3 data-en="So where should you start?" data-pt="Então, por onde você deve começar?">So where should you start?</h3>
+      <p data-en="Start with the problem, not the product. Decide who you want to help, understand the problem they are trying to solve, learn the available options and choose one small next step you can actually test."
+         data-pt="Comece pelo problema, não pelo produto. Decida quem você quer ajudar, entenda o problema que essa pessoa está tentando resolver, conheça as opções disponíveis e escolha um pequeno próximo passo que você realmente possa testar.">
+        Start with the problem, not the product. Decide who you want to help, understand the problem they are trying to solve, learn the available options and choose one small next step you can actually test.
       </p>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="about"
-  class="section">
-
+<section id="about" class="section">
   <div class="wrap">
-
     <div class="story-panel">
-
       <div>
-
-        <div
-          class="eyebrow"
-          data-en="WHY GOODGROUND EXISTS"
-          data-pt="POR QUE A GOODGROUND EXISTE">
-
-          WHY GOODGROUND EXISTS
-
-        </div>
-
-        <p
-          class="story-quote"
-          data-en="I didn’t start GoodGround because I had all the answers. I started because I had many of the same questions."
-          data-pt="Eu não criei a GoodGround porque tinha todas as respostas. Eu criei porque também tinha muitas dessas perguntas.">
-
-          I didn’t start GoodGround because I had all the answers. I started because I had many of the same questions.
-
+        <div class="eyebrow" data-en="WHY GOODGROUND EXISTS" data-pt="POR QUE A GOODGROUND EXISTE">WHY GOODGROUND EXISTS</div>
+        <p class="story-quote"
+          data-en="GoodGround was born from the desire to learn, build something of my own and make the online path clearer for people starting with the same questions I had."
+          data-pt="A GoodGround nasceu da vontade de aprender, construir algo meu e tornar o caminho online mais claro para pessoas que estão começando com as mesmas dúvidas que eu tive.">
+          GoodGround was born from the desire to learn, build something of my own and make the online path clearer for people starting with the same questions I had.
         </p>
-
       </div>
 
       <div class="story-copy">
-
-        <p
-          data-en="I’m a mother. After leaving public service, I went through a very difficult period with depression and psoriasis. That experience changed the way I looked at work, health, time and quality of life."
-          data-pt="Eu sou mãe. Depois de sair do serviço público, passei por um período muito difícil com depressão e psoríase. Essa experiência mudou a maneira como eu enxergava trabalho, saúde, tempo e qualidade de vida.">
-
-          I’m a mother. After leaving public service, I went through a very difficult period with depression and psoriasis.
-
+        <p data-en="My name is Jaqueline Martins. For 24 years, I worked in public service as a nursing technician, much of that time inside an operating room. It was a demanding career, and after many years I reached a point where I knew I wanted something different for my life."
+           data-pt="Meu nome é Jaqueline Martins. Durante 24 anos, trabalhei no serviço público como técnica em enfermagem, grande parte desse tempo dentro de um centro cirúrgico. Foi uma carreira exigente e, depois de muitos anos, cheguei a um ponto em que percebi que queria algo diferente para a minha vida.">
+          My name is Jaqueline Martins. For 24 years, I worked in public service as a nursing technician, much of that time inside an operating room. It was a demanding career, and after many years I reached a point where I knew I wanted something different for my life.
         </p>
 
-        <p
-          data-en="Working from home helped me see another possibility: building something that can grow while leaving more room for life. I’m still learning and building, and GoodGround is where I share what I discover along the way."
-          data-pt="Trabalhar de casa me fez enxergar outra possibilidade: construir algo que possa crescer e, ao mesmo tempo, deixar mais espaço para viver. Eu continuo aprendendo e construindo, e a GoodGround é onde compartilho o que descubro nesse caminho.">
-
-          Working from home helped me see another possibility: building something that can grow while leaving more room for life.
-
+        <p data-en="I began studying online business, affiliate marketing and new ways of working. At first, I had many of the same questions people still have today: Where do I start? What is legitimate? What actually works? What is worth learning? What should I avoid?"
+           data-pt="Comecei então a estudar negócios online, marketing de afiliados e novas formas de trabalhar. No início, eu tinha muitas das mesmas dúvidas que tantas pessoas ainda têm hoje: Por onde eu começo? O que é legítimo? O que realmente funciona? O que vale a pena aprender? O que devo evitar?">
+          I began studying online business, affiliate marketing and new ways of working. At first, I had many of the same questions people still have today: Where do I start? What is legitimate? What actually works? What is worth learning? What should I avoid?
         </p>
 
-        <p
-          data-en="The goal is not to promise that someone else will have the same outcome. It is to make the path clearer, share what we learn, research options carefully and help people make their own decisions."
-          data-pt="O objetivo não é prometer que outra pessoa terá o mesmo resultado. É tornar o caminho mais claro, compartilhar o que aprendemos, pesquisar opções com cuidado e ajudar as pessoas a tomar suas próprias decisões.">
-
-          The goal is to make the path clearer, share what we learn and help people make their own decisions.
-
+        <p data-en="Along the way, I also spent money on courses that promised to teach online business, but in some cases the main thing they taught was how to sell that same course to someone else. That made me ask harder questions: Was I really learning how to build something? Was I learning a real skill? Was I solving a real problem for someone? Or was I just being taught to repeat the same sales cycle?"
+           data-pt="Ao longo desse caminho, também gastei dinheiro com cursos que prometiam ensinar negócios online, mas, em alguns casos, o principal que ensinavam era como vender aquele mesmo curso para outra pessoa. Isso me fez fazer perguntas mais sérias: Eu estava realmente aprendendo a construir alguma coisa? Estava aprendendo uma habilidade de verdade? Estava resolvendo um problema real para alguém? Ou estava apenas sendo ensinada a repetir o mesmo ciclo de venda?">
+          Along the way, I also spent money on courses that promised to teach online business, but in some cases the main thing they taught was how to sell that same course to someone else. That made me ask harder questions: Was I really learning how to build something? Was I learning a real skill? Was I solving a real problem for someone? Or was I just being taught to repeat the same sales cycle?
         </p>
 
+        <p data-en="The more I studied, the more I realized how confusing this world can be when you are starting from zero. That is how GoodGround was born — from the desire to learn, to build something of my own and to create a different path."
+           data-pt="Quanto mais eu estudava, mais percebia como esse mundo pode parecer confuso para quem está começando do zero. Foi assim que nasceu a GoodGround — da vontade de aprender, de empreender, de construir algo meu e de criar um caminho diferente.">
+          The more I studied, the more I realized how confusing this world can be when you are starting from zero. That is how GoodGround was born — from the desire to learn, to build something of my own and to create a different path.
+        </p>
+
+        <p data-en="Along the way, I gained knowledge, experience and perspective. Now I want to share what I continue learning with people who have the same doubts I once had. GoodGround is not about pretending to have all the answers. It is about researching, learning, explaining things clearly and helping people make better-informed decisions."
+           data-pt="Ao longo desse processo, fui adquirindo conhecimento, experiência e uma nova visão. Agora quero dividir o que continuo aprendendo com pessoas que têm as mesmas dúvidas que eu já tive. A GoodGround não existe para fingir que tem todas as respostas. Ela existe para pesquisar, aprender, explicar de forma clara e ajudar as pessoas a tomar decisões mais conscientes.">
+          Along the way, I gained knowledge, experience and perspective. Now I want to share what I continue learning with people who have the same doubts I once had. GoodGround is not about pretending to have all the answers. It is about researching, learning, explaining things clearly and helping people make better-informed decisions.
+        </p>
+
+        <p><strong data-en="Learn first. Decide later." data-pt="Aprenda primeiro. Decida depois.">Learn first. Decide later.</strong></p>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="how"
-  class="section soft-background">
-
+<section id="how" class="section soft-background">
   <div class="wrap">
-
-    <div
-      class="eyebrow"
-      data-en="HOW GOODGROUND HELPS"
-      data-pt="COMO A GOODGROUND AJUDA">
-
-      HOW GOODGROUND HELPS
-
-    </div>
-
-    <h2
-      class="section-title"
-      data-en="We research. We explain. We compare. You decide."
-      data-pt="Nós pesquisamos. Explicamos. Comparamos. Você decide.">
-
+    <div class="eyebrow" data-en="HOW GOODGROUND HELPS" data-pt="COMO A GOODGROUND AJUDA">HOW GOODGROUND HELPS</div>
+    <h2 class="section-title" data-en="We research. We explain. We compare. You decide." data-pt="Nós pesquisamos. Explicamos. Comparamos. Você decide.">
       We research. We explain. We compare. You decide.
-
     </h2>
 
     <div class="help-grid">
-
       <div class="help-card">
-
-        <span class="step-number">
-          1
-        </span>
-
-        <h3
-          data-en="Research"
-          data-pt="Pesquisar">
-          Research
-        </h3>
-
-        <p
-          data-en="We look into tools, platforms, business models and online resources."
-          data-pt="Investigamos ferramentas, plataformas, modelos de negócio e recursos online.">
-
-          We look into tools, platforms, business models and online resources.
-
-        </p>
-
+        <span class="step-number">1</span>
+        <h3 data-en="Research" data-pt="Pesquisar">Research</h3>
+        <p data-en="We look into tools, platforms, business models and online resources."
+           data-pt="Investigamos ferramentas, plataformas, modelos de negócio e recursos online.">We look into tools, platforms, business models and online resources.</p>
       </div>
-
       <div class="help-card">
-
-        <span class="step-number">
-          2
-        </span>
-
-        <h3
-          data-en="Explain"
-          data-pt="Explicar">
-          Explain
-        </h3>
-
-        <p
-          data-en="We turn complicated information into language that is easier to understand."
-          data-pt="Transformamos informações complicadas em uma linguagem mais fácil de entender.">
-
-          We turn complicated information into language that is easier to understand.
-
-        </p>
-
+        <span class="step-number">2</span>
+        <h3 data-en="Explain" data-pt="Explicar">Explain</h3>
+        <p data-en="We turn complicated information into language that is easier to understand."
+           data-pt="Transformamos informações complicadas em uma linguagem mais fácil de entender.">We turn complicated information into language that is easier to understand.</p>
       </div>
-
       <div class="help-card">
-
-        <span class="step-number">
-          3
-        </span>
-
-        <h3
-          data-en="Compare"
-          data-pt="Comparar">
-          Compare
-        </h3>
-
-        <p
-          data-en="We show differences, strengths, limitations and costs when reliable information is available."
-          data-pt="Mostramos diferenças, pontos fortes, limitações e custos quando existem informações confiáveis disponíveis.">
-
-          We show differences, strengths, limitations and costs when reliable information is available.
-
-        </p>
-
+        <span class="step-number">3</span>
+        <h3 data-en="Compare" data-pt="Comparar">Compare</h3>
+        <p data-en="We show differences, strengths, limitations and costs when reliable information is available."
+           data-pt="Mostramos diferenças, pontos fortes, limitações e custos quando existem informações confiáveis disponíveis.">We show differences, strengths, limitations and costs when reliable information is available.</p>
       </div>
-
       <div class="help-card">
-
-        <span class="step-number">
-          4
-        </span>
-
-        <h3
-          data-en="You decide"
-          data-pt="Você decide">
-          You decide
-        </h3>
-
-        <p
-          data-en="Our role is to provide useful context — not pressure you into a purchase."
-          data-pt="Nosso papel é oferecer contexto útil — não pressionar você a comprar.">
-
-          Our role is to provide useful context — not pressure you into a purchase.
-
-        </p>
-
+        <span class="step-number">4</span>
+        <h3 data-en="You decide" data-pt="Você decide">You decide</h3>
+        <p data-en="Our role is to provide useful context — not pressure you into a purchase."
+           data-pt="Nosso papel é oferecer contexto útil — não pressionar você a comprar.">Our role is to provide useful context — not pressure you into a purchase.</p>
       </div>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="start-here"
-  class="section">
-
+<section id="start-here" class="section">
   <div class="wrap">
-
     <div class="start-panel">
-
-      <div
-        class="eyebrow light"
-        data-en="NEW TO ALL OF THIS?"
-        data-pt="TUDO ISSO É NOVO PARA VOCÊ?">
-
-        NEW TO ALL OF THIS?
-
-      </div>
-
-      <h2
-        class="section-title light"
-        data-en="You don’t need to do everything on day one."
-        data-pt="Você não precisa fazer tudo no primeiro dia.">
-
+      <div class="eyebrow light" data-en="NEW TO ALL OF THIS?" data-pt="TUDO ISSO É NOVO PARA VOCÊ?">NEW TO ALL OF THIS?</div>
+      <h2 class="section-title light" data-en="You don’t need to do everything on day one." data-pt="Você não precisa fazer tudo no primeiro dia.">
         You don’t need to do everything on day one.
-
       </h2>
-
-      <p
-        data-en="You do not need ten tools, five social networks and a complicated funnel before you begin."
-        data-pt="Você não precisa de dez ferramentas, cinco redes sociais e um funil complicado antes de começar.">
-
+      <p data-en="You do not need ten tools, five social networks and a complicated funnel before you begin."
+         data-pt="Você não precisa de dez ferramentas, cinco redes sociais e um funil complicado antes de começar.">
         You do not need ten tools, five social networks and a complicated funnel before you begin.
-
       </p>
 
       <div class="start-steps">
-
-        <div class="start-step">
-          <strong
-            data-en="1. Start with one problem."
-            data-pt="1. Comece com um problema.">
-            1. Start with one problem.
-          </strong>
-        </div>
-
-        <div class="start-step">
-          <strong
-            data-en="2. Understand your options."
-            data-pt="2. Entenda suas opções.">
-            2. Understand your options.
-          </strong>
-        </div>
-
-        <div class="start-step">
-          <strong
-            data-en="3. Choose one direction."
-            data-pt="3. Escolha uma direção.">
-            3. Choose one direction.
-          </strong>
-        </div>
-
-        <div class="start-step">
-          <strong
-            data-en="4. Take the next step."
-            data-pt="4. Dê o próximo passo.">
-            4. Take the next step.
-          </strong>
-        </div>
-
+        <div class="start-step"><strong data-en="1. Start with one problem." data-pt="1. Comece com um problema.">1. Start with one problem.</strong></div>
+        <div class="start-step"><strong data-en="2. Understand your options." data-pt="2. Entenda suas opções.">2. Understand your options.</strong></div>
+        <div class="start-step"><strong data-en="3. Choose one direction." data-pt="3. Escolha uma direção.">3. Choose one direction.</strong></div>
+        <div class="start-step"><strong data-en="4. Take the next step." data-pt="4. Dê o próximo passo.">4. Take the next step.</strong></div>
       </div>
 
-      <a
-        class="btn btn-primary"
-        href="#blog"
-        data-en="Explore beginner answers →"
-        data-pt="Veja respostas para iniciantes →">
-
-        Explore beginner answers →
-
-      </a>
-
+      <a class="btn btn-primary" href="#blog" data-en="Explore beginner answers →" data-pt="Veja respostas para iniciantes →">Explore beginner answers →</a>
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="blog"
-  class="section soft-background">
-
+<section id="blog" class="section soft-background">
   <div class="wrap">
-
-    <div
-      class="eyebrow"
-      data-en="ANSWERS PEOPLE ACTUALLY LOOK FOR"
-      data-pt="RESPOSTAS QUE AS PESSOAS REALMENTE PROCURAM">
-
-      ANSWERS PEOPLE ACTUALLY LOOK FOR
-
-    </div>
-
-    <h2
-      class="section-title"
-      data-en="Start with the question. Then go deeper."
-      data-pt="Comece pela pergunta. Depois aprofunde.">
-
-      Start with the question. Then go deeper.
-
-    </h2>
-
-    <p
-      class="section-intro"
-      data-en="Our guides are organized around real questions — with direct answers first and practical detail after."
-      data-pt="Nossos guias são organizados em torno de perguntas reais — primeiro uma resposta direta, depois os detalhes práticos.">
-
-      Our guides are organized around real questions — with direct answers first and practical detail after.
-
+    <div class="eyebrow" data-en="ANSWERS PEOPLE ACTUALLY LOOK FOR" data-pt="RESPOSTAS QUE AS PESSOAS REALMENTE PROCURAM">ANSWERS PEOPLE ACTUALLY LOOK FOR</div>
+    <h2 class="section-title" data-en="Start with the question. Then go deeper." data-pt="Comece pela pergunta. Depois aprofunde.">Start with the question. Then go deeper.</h2>
+    <p class="section-intro"
+      data-en="Our upcoming guides are organized around real questions — with direct answers first and practical detail after."
+      data-pt="Nossos próximos guias serão organizados em torno de perguntas reais — primeiro uma resposta direta, depois os detalhes práticos.">
+      Our upcoming guides are organized around real questions — with direct answers first and practical detail after.
     </p>
 
     <div class="article-grid">
-
-      <a
-        class="article-card"
-        href="/is-affiliate-marketing-legit.html">
-
-        <span
-          class="tag"
-          data-en="AFFILIATE MARKETING"
-          data-pt="MARKETING DE AFILIADOS">
-
-          AFFILIATE MARKETING
-
-        </span>
-
-        <h3
-          data-en="Is Affiliate Marketing Legit? A Beginner’s Guide"
-          data-pt="Marketing de Afiliados é Legítimo? Guia para Iniciantes">
-
-          Is Affiliate Marketing Legit? A Beginner’s Guide
-
-        </h3>
-
-        <p
-          data-en="How the model works, how commissions are earned, what is realistic and what to watch out for."
-          data-pt="Como o modelo funciona, como as comissões são geradas, o que é realista e quais cuidados tomar.">
-
-          How the model works, how commissions are earned, what is realistic and what to watch out for.
-
-        </p>
-
+      <a class="article-card" href="/is-affiliate-marketing-legit.html">
+        <span class="tag" data-en="AFFILIATE MARKETING" data-pt="MARKETING DE AFILIADOS">AFFILIATE MARKETING</span>
+        <h3 data-en="Is Affiliate Marketing Legit? A Beginner’s Guide" data-pt="Marketing de Afiliados é Legítimo? Guia para Iniciantes">Is Affiliate Marketing Legit? A Beginner’s Guide</h3>
+        <p data-en="How the model works, how commissions are earned, what is realistic and what to watch out for."
+           data-pt="Como o modelo funciona, como as comissões são geradas, o que é realista e quais cuidados tomar.">How the model works, how commissions are earned, what is realistic and what to watch out for.</p>
       </a>
 
-
       <article class="article-card">
-
-        <span
-          class="tag"
-          data-en="ONLINE BUSINESS"
-          data-pt="NEGÓCIOS ONLINE">
-
-          ONLINE BUSINESS
-
-        </span>
-
-        <h3
-          data-en="How to Make Money Online: Realistic Options for Beginners"
-          data-pt="Como Ganhar Dinheiro Online: Opções Realistas para Iniciantes">
-
-          How to Make Money Online: Realistic Options for Beginners
-
-        </h3>
-
-        <p
-          data-en="A clear overview of common models and what each one requires before you invest time or money."
-          data-pt="Uma visão clara de modelos comuns e do que cada um exige antes de você investir tempo ou dinheiro.">
-
-          A clear overview of common models and what each one requires before you invest time or money.
-
-        </p>
-
+        <span class="tag" data-en="ONLINE BUSINESS" data-pt="NEGÓCIOS ONLINE">ONLINE BUSINESS</span>
+        <h3 data-en="How to Make Money Online: Realistic Options for Beginners" data-pt="Como Ganhar Dinheiro Online: Opções Realistas para Iniciantes">How to Make Money Online: Realistic Options for Beginners</h3>
+        <p data-en="A clear overview of common models and what each one requires before you invest time or money."
+           data-pt="Uma visão clara de modelos comuns e do que cada um exige antes de você investir tempo ou dinheiro.">A clear overview of common models and what each one requires before you invest time or money.</p>
       </article>
 
-
       <article class="article-card">
-
-        <span
-          class="tag"
-          data-en="AUDIENCE"
-          data-pt="AUDIÊNCIA">
-
-          AUDIENCE
-
-        </span>
-
-        <h3
-          data-en="Do You Need Followers for Affiliate Marketing?"
-          data-pt="Você Precisa de Seguidores para Marketing de Afiliados?">
-
-          Do You Need Followers for Affiliate Marketing?
-
-        </h3>
-
-        <p
-          data-en="Why audience relevance and trust can matter more than chasing a huge follower count."
-          data-pt="Por que relevância e confiança podem importar mais do que perseguir uma quantidade enorme de seguidores.">
-
-          Why audience relevance and trust can matter more than chasing a huge follower count.
-
-        </p>
-
+        <span class="tag" data-en="AUDIENCE" data-pt="AUDIÊNCIA">AUDIENCE</span>
+        <h3 data-en="Do You Need Followers for Affiliate Marketing?" data-pt="Você Precisa de Seguidores para Marketing de Afiliados?">Do You Need Followers for Affiliate Marketing?</h3>
+        <p data-en="Why audience relevance and trust can matter more than chasing a huge follower count."
+           data-pt="Por que relevância e confiança podem importar mais do que perseguir uma quantidade enorme de seguidores.">Why audience relevance and trust can matter more than chasing a huge follower count.</p>
       </article>
 
-
       <article class="article-card">
-
-        <span
-          class="tag"
-          data-en="STARTING OUT"
-          data-pt="COMEÇANDO">
-
-          STARTING OUT
-
-        </span>
-
-        <h3
-          data-en="What Do You Actually Need to Start an Online Business?"
-          data-pt="O Que Você Realmente Precisa para Começar um Negócio Online?">
-
-          What Do You Actually Need to Start an Online Business?
-
-        </h3>
-
-        <p
-          data-en="A simple way to separate essentials from tools you may not need yet."
-          data-pt="Uma forma simples de separar o essencial das ferramentas que talvez você ainda não precise.">
-
-          A simple way to separate essentials from tools you may not need yet.
-
-        </p>
-
+        <span class="tag" data-en="STARTING OUT" data-pt="COMEÇANDO">STARTING OUT</span>
+        <h3 data-en="What Do You Actually Need to Start an Online Business?" data-pt="O Que Você Realmente Precisa para Começar um Negócio Online?">What Do You Actually Need to Start an Online Business?</h3>
+        <p data-en="A simple way to separate essentials from tools you may not need yet."
+           data-pt="Uma forma simples de separar o essencial das ferramentas que talvez você ainda não precise.">A simple way to separate essentials from tools you may not need yet.</p>
       </article>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="resources"
-  class="section">
-
+<section id="resources" class="section">
   <div class="wrap">
-
-    <div
-      class="eyebrow"
-      data-en="FREE RESOURCES"
-      data-pt="RECURSOS GRATUITOS">
-
-      FREE RESOURCES
-
-    </div>
-
-    <h2
-      class="section-title"
-      data-en="Useful next steps — not just another download."
-      data-pt="Próximos passos úteis — não apenas mais um download.">
-
-      Useful next steps — not just another download.
-
-    </h2>
-
-    <p
-      class="section-intro"
+    <div class="eyebrow" data-en="FREE RESOURCES" data-pt="RECURSOS GRATUITOS">FREE RESOURCES</div>
+    <h2 class="section-title" data-en="Useful next steps — not just another download." data-pt="Próximos passos úteis — não apenas mais um download.">Useful next steps — not just another download.</h2>
+    <p class="section-intro"
       data-en="We’re building small resources that help you act on what you just learned. We’ll start with one excellent resource and grow the library carefully."
       data-pt="Estamos criando pequenos recursos que ajudam você a agir sobre o que acabou de aprender. Vamos começar com um excelente recurso e ampliar a biblioteca com cuidado.">
-
-      We’re building small resources that help you act on what you just learned.
-
+      We’re building small resources that help you act on what you just learned. We’ll start with one excellent resource and grow the library carefully.
     </p>
 
     <div class="resource-grid">
-
       <div class="resource-card">
-
-        <span
-          class="tag"
-          data-en="COMING FIRST"
-          data-pt="PRIMEIRO RECURSO">
-
-          COMING FIRST
-
-        </span>
-
-        <h3
-          data-en="Beginner Starting Checklist"
-          data-pt="Checklist para Quem Está Começando">
-
-          Beginner Starting Checklist
-
-        </h3>
-
-        <p
-          data-en="A simple checklist to help you decide what to learn, what to ignore for now and what your next practical step should be."
-          data-pt="Um checklist simples para ajudar você a decidir o que aprender, o que ignorar por enquanto e qual deve ser seu próximo passo prático.">
-
+        <span class="tag" data-en="COMING FIRST" data-pt="PRIMEIRO RECURSO">COMING FIRST</span>
+        <h3 data-en="Beginner Starting Checklist" data-pt="Checklist para Quem Está Começando">Beginner Starting Checklist</h3>
+        <p data-en="A simple checklist to help you decide what to learn, what to ignore for now and what your next practical step should be."
+           data-pt="Um checklist simples para ajudar você a decidir o que aprender, o que ignorar por enquanto e qual deve ser seu próximo passo prático.">
           A simple checklist to help you decide what to learn, what to ignore for now and what your next practical step should be.
-
         </p>
-
       </div>
-
 
       <div class="resource-card">
-
-        <span
-          class="tag"
-          data-en="NEXT"
-          data-pt="DEPOIS">
-
-          NEXT
-
-        </span>
-
-        <h3
-          data-en="Find Your Starting Point Quiz"
-          data-pt="Quiz: Descubra por Onde Começar">
-
-          Find Your Starting Point Quiz
-
-        </h3>
-
-        <p
-          data-en="A short guided quiz designed to point you toward the kind of information that best matches your current goal."
-          data-pt="Um quiz curto e guiado para direcionar você ao tipo de informação que mais combina com seu objetivo atual.">
-
+        <span class="tag" data-en="NEXT" data-pt="DEPOIS">NEXT</span>
+        <h3 data-en="Find Your Starting Point Quiz" data-pt="Quiz: Descubra por Onde Começar">Find Your Starting Point Quiz</h3>
+        <p data-en="A short guided quiz designed to point you toward the kind of information that best matches your current goal."
+           data-pt="Um quiz curto e guiado para direcionar você ao tipo de informação que mais combina com seu objetivo atual.">
           A short guided quiz designed to point you toward the kind of information that best matches your current goal.
-
         </p>
-
       </div>
-
     </div>
-
 
     <div class="trust-note">
-
-      <strong
-        data-en="Built on Trust:"
-        data-pt="Construída sobre confiança:">
-
-        Built on Trust:
-
-      </strong>
-
-      <span
-        data-en=" if a recommendation includes an affiliate relationship, we disclose it. A commission never turns an unsuitable product into a recommendation."
-        data-pt=" se uma recomendação incluir uma relação de afiliado, nós informamos. Uma comissão nunca transforma um produto inadequado em uma recomendação.">
-
+      <strong data-en="Built on Trust:" data-pt="Construída sobre confiança:">Built on Trust:</strong>
+      <span data-en=" if a recommendation includes an affiliate relationship, we disclose it. A commission never turns an unsuitable product into a recommendation."
+            data-pt=" se uma recomendação incluir uma relação de afiliado, nós informamos. Uma comissão nunca transforma um produto inadequado em uma recomendação.">
         if a recommendation includes an affiliate relationship, we disclose it. A commission never turns an unsuitable product into a recommendation.
-
       </span>
-
     </div>
-
   </div>
-
 </section>
 
-
-<section
-  id="reviews"
-  class="section dark-section">
-
+<section id="reviews" class="section dark-section">
   <div class="wrap">
-
-    <div
-      class="eyebrow light"
-      data-en="TOOLS & RECOMMENDATIONS"
-      data-pt="FERRAMENTAS E RECOMENDAÇÕES">
-
-      TOOLS & RECOMMENDATIONS
-
-    </div>
-
-    <h2
-      class="section-title light"
-      data-en="The tool comes after the question."
-      data-pt="A ferramenta vem depois da pergunta.">
-
-      The tool comes after the question.
-
-    </h2>
-
-    <p
-      class="section-intro light-muted"
+    <div class="eyebrow light" data-en="TOOLS & RECOMMENDATIONS" data-pt="FERRAMENTAS E RECOMENDAÇÕES">TOOLS & RECOMMENDATIONS</div>
+    <h2 class="section-title light" data-en="The tool comes after the question." data-pt="A ferramenta vem depois da pergunta.">The tool comes after the question.</h2>
+    <p class="section-intro light-muted"
       data-en="Need a website, email platform, AI tool or another digital resource? We explain what the category is for, compare available options and make affiliate relationships clear."
       data-pt="Precisa de um site, plataforma de e-mail, ferramenta de IA ou outro recurso digital? Explicamos para que serve a categoria, comparamos opções disponíveis e deixamos claras as relações de afiliado.">
-
       Need a website, email platform, AI tool or another digital resource? We explain what the category is for, compare available options and make affiliate relationships clear.
-
     </p>
-
-    <a
-      class="text-link"
-      href="/affiliate-disclosure.html"
-      data-en="Read our Affiliate Disclosure →"
-      data-pt="Leia nossa Divulgação de Afiliados →">
-
-      Read our Affiliate Disclosure →
-
-    </a>
-
+    <a class="text-link" href="/affiliate-disclosure.html" data-en="Read our Affiliate Disclosure →" data-pt="Leia nossa Divulgação de Afiliados →">Read our Affiliate Disclosure →</a>
   </div>
-
 </section>
-
 
 <section class="section contact-cta">
-
   <div class="wrap contact-cta-inner">
-
-    <div class="contact-tree">
-      🌳
-    </div>
-
-    <h2
-      data-en="What are you trying to build?"
-      data-pt="O que você está tentando construir?">
-
-      What are you trying to build?
-
-    </h2>
-
-    <p
-      data-en="Tell us what you’re working on or what is confusing you. Your question may help shape a future GoodGround guide."
-      data-pt="Conte no que você está trabalhando ou o que está deixando você em dúvida. Sua pergunta pode ajudar a criar um futuro guia da GoodGround.">
-
+    <div class="contact-tree">🌳</div>
+    <h2 data-en="What are you trying to build?" data-pt="O que você está tentando construir?">What are you trying to build?</h2>
+    <p data-en="Tell us what you’re working on or what is confusing you. Your question may help shape a future GoodGround guide."
+       data-pt="Conte no que você está trabalhando ou o que está deixando você em dúvida. Sua pergunta pode ajudar a criar um futuro guia da GoodGround.">
       Tell us what you’re working on or what is confusing you. Your question may help shape a future GoodGround guide.
-
     </p>
-
-    <a
-      class="btn btn-primary"
-      href="/contact.html"
-      data-en="Ask GoodGround →"
-      data-pt="Pergunte à GoodGround →">
-
-      Ask GoodGround →
-
-    </a>
-
+    <a class="btn btn-primary" href="/contact.html" data-en="Ask GoodGround →" data-pt="Pergunte à GoodGround →">Ask GoodGround →</a>
   </div>
-
 </section>
 
-
 </main>
-
+<!-- ===================================================== -->
+<!-- FOOTER -->
+<!-- ===================================================== -->
 
 <footer class="footer">
 
   <div class="wrap footer-main">
+
+
+    <!-- GOODGROUND -->
 
     <div class="footer-column footer-about">
 
@@ -1782,8 +833,7 @@
 
         <img
           src="/goodground-logo.png"
-          alt="GoodGround"
-        >
+          alt="GoodGround">
 
         <div>
 
@@ -1799,13 +849,17 @@
 
       </div>
 
+
       <p
         data-en="An independent digital publication about marketing, AI, automation, email, websites, productivity and online business — written for humans, built on trust."
         data-pt="Uma publicação digital independente sobre marketing, inteligência artificial, automação, e-mail, sites, produtividade e negócios online — feita para pessoas e construída sobre confiança.">
 
-        An independent digital publication about marketing, AI, automation, email, websites, productivity and online business — written for humans, built on trust.
+        An independent digital publication about marketing,
+        AI, automation, email, websites, productivity and
+        online business — written for humans, built on trust.
 
       </p>
+
 
       <a href="/">
         goodground.site
@@ -1814,56 +868,84 @@
     </div>
 
 
+
+    <!-- EXPLORE -->
+
     <div class="footer-column">
 
-      <h4>
+      <h4
+        data-en="EXPLORE"
+        data-pt="EXPLORE">
+
         EXPLORE
+
       </h4>
+
 
       <a
         href="#home"
         data-en="Home"
         data-pt="Início">
+
         Home
+
       </a>
+
 
       <a
         href="#about"
         data-en="About"
         data-pt="Sobre">
+
         About
+
       </a>
+
 
       <a
         href="#blog"
         data-en="Blog"
         data-pt="Blog">
+
         Blog
+
       </a>
+
 
       <a
         href="#resources"
         data-en="Tools & Resources"
         data-pt="Ferramentas e Recursos">
-        Tools & Resources
+
+        Tools &amp; Resources
+
       </a>
+
 
       <a
         href="#reviews"
         data-en="Reviews"
         data-pt="Avaliações">
+
         Reviews
+
       </a>
+
 
       <a
         href="/contact.html"
         data-en="Contact"
         data-pt="Contato">
+
         Contact
+
       </a>
 
     </div>
 
+
+
+    <!-- LEGAL -->
 
     <div class="footer-column">
 
@@ -1871,39 +953,57 @@
         LEGAL
       </h4>
 
+
       <a
         href="/privacy.html"
         data-en="Privacy Policy"
         data-pt="Política de Privacidade">
+
         Privacy Policy
+
       </a>
+
 
       <a
         href="/terms.html"
         data-en="Terms of Use"
         data-pt="Termos de Uso">
+
         Terms of Use
+
       </a>
+
 
       <a
         href="/affiliate-disclosure.html"
         data-en="Affiliate Disclosure"
         data-pt="Divulgação de Afiliados">
+
         Affiliate Disclosure
+
       </a>
 
     </div>
 
+
+
+    <!-- CONNECT -->
 
     <div class="footer-column footer-connect">
 
       <h4
         data-en="CONNECT"
         data-pt="CONECTE-SE">
+
         CONNECT
+
       </h4>
 
+
       <div class="social-icons">
+
+
+        <!-- INSTAGRAM -->
 
         <a
           href="https://www.instagram.com/goodground.site/"
@@ -1912,9 +1012,43 @@
           target="_blank"
           rel="noopener noreferrer">
 
-          Instagram
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true">
+
+            <rect
+              x="3"
+              y="3"
+              width="18"
+              height="18"
+              rx="5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"/>
+
+            <circle
+              cx="12"
+              cy="12"
+              r="4"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"/>
+
+            <circle
+              cx="17.5"
+              cy="6.5"
+              r="1"
+              fill="currentColor"/>
+
+          </svg>
 
         </a>
+
+
+
+        <!-- FACEBOOK -->
 
         <a
           href="https://www.facebook.com/people/GoodGround/61593695165469/"
@@ -1923,11 +1057,22 @@
           target="_blank"
           rel="noopener noreferrer">
 
-          Facebook
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true">
+
+            <path
+              d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v8h4v-8h3l1-4h-4V9c0-.7.3-1 1-1z"
+              fill="currentColor"/>
+
+          </svg>
 
         </a>
 
       </div>
+
 
       <p
         data-en="Choose the way that works best for you."
@@ -1942,15 +1087,21 @@
   </div>
 
 
+
+  <!-- TRANSPARENCY -->
+
   <div class="wrap footer-bottom">
 
     <p
       data-en="Transparency: some links on this site are affiliate links. If you buy through them, GOODGROUND may earn a commission at no extra cost to you. This never decides what we recommend."
       data-pt="Transparência: alguns links deste site são links de afiliados. Se você comprar por meio deles, a GOODGROUND poderá receber uma comissão sem nenhum custo adicional para você. Isso nunca determina o que recomendamos.">
 
-      Transparency: some links on this site are affiliate links. If you buy through them, GOODGROUND may earn a commission at no extra cost to you. This never decides what we recommend.
+      Transparency: some links on this site are affiliate links.
+      If you buy through them, GOODGROUND may earn a commission
+      at no extra cost to you. This never decides what we recommend.
 
     </p>
+
 
     <p>
 
@@ -1971,30 +1122,38 @@
 </footer>
 
 
+
+<!-- ===================================================== -->
+<!-- EN / PT -->
+<!-- ===================================================== -->
+
 <script>
 
 function setLanguage(language) {
 
   const elements =
-    document.querySelectorAll(
-      '[data-en][data-pt]'
-    );
+    document.querySelectorAll('[data-en][data-pt]');
 
-  elements.forEach(
-    function(element) {
+
+  elements.forEach(function(element) {
+
+    if (language === 'pt') {
 
       element.textContent =
-        language === 'pt'
-          ? element.getAttribute('data-pt')
-          : element.getAttribute('data-en');
+        element.getAttribute('data-pt');
+
+    } else {
+
+      element.textContent =
+        element.getAttribute('data-en');
 
     }
-  );
 
-  document.documentElement.lang =
-    language === 'pt'
-      ? 'pt-BR'
-      : 'en';
+  });
+
+
+  document.documentElement.lang = language;
+
 
   document
     .getElementById('lang-en')
@@ -2003,12 +1162,14 @@ function setLanguage(language) {
       language === 'en'
     );
 
+
   document
     .getElementById('lang-pt')
     .classList.toggle(
       'active',
       language === 'pt'
     );
+
 
   if (language === 'pt') {
 
@@ -2036,6 +1197,7 @@ function setLanguage(language) {
 
   }
 
+
   localStorage.setItem(
     'goodground-language',
     language
@@ -2044,18 +1206,15 @@ function setLanguage(language) {
 }
 
 
+
 document.addEventListener(
   'DOMContentLoaded',
   function() {
 
     const savedLanguage =
-      localStorage.getItem(
-        'goodground-language'
-      ) || 'en';
+      localStorage.getItem('goodground-language') || 'en';
 
-    setLanguage(
-      savedLanguage
-    );
+    setLanguage(savedLanguage);
 
   }
 );
@@ -2064,4 +1223,5 @@ document.addEventListener(
 
 
 </body>
+
 </html>
