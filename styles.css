@@ -1,116 +1,147 @@
+/* GoodGround — styles.css
+   Correção da estrutura de cabeçalho e dos estilos responsivos.
+   Mantém as regras responsivas existentes no repositório. */
 
-  .content-grid{
-    gap:50px;
-  }
-
-  .cards{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .contact-layout{
-    gap:35px;
-  }
-
-  .footer-main{
-    grid-template-columns:1fr 1fr;
-  }
-
+:root {
+  --gg-green: #194f3d;
+  --gg-dark: #203b28;
+  --gg-cream: #fafaf7;
+  --gg-border: #e3e9e3;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
 
-/* MOBILE */
+html { scroll-behavior: smooth; }
 
-@media(max-width:760px){
+body { margin: 0; }
 
-  .wrap{
-    width:min(100% - 30px,1180px);
+img { max-width: 100%; }
+
+.wrap {
+  width: min(100% - 48px, 1180px);
+  margin-inline: auto;
+}
+
+/* CABEÇALHO — evita o logotipo sem limite de tamanho */
+.site-header {
+  position: relative;
+  z-index: 10;
+  background: #fff;
+  border-bottom: 1px solid var(--gg-border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  min-height: 84px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 11px;
+  min-width: 0;
+  color: var(--gg-dark);
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+  flex: 0 0 auto;
+  width: 54px;
+  height: 54px;
+  object-fit: contain;
+}
+
+.brand-text { display: flex; flex-direction: column; min-width: 0; }
+.brand-text strong { font-size: 20px; line-height: 1.15; }
+.brand-text small { font-size: 11px; letter-spacing: .09em; }
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.links a {
+  color: var(--gg-dark);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.links a:hover, .links a:focus-visible {
+  color: var(--gg-green);
+  text-decoration: underline;
+}
+
+.languages {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 auto;
+}
+
+.languages button {
+  cursor: pointer;
+  border: 1px solid var(--gg-border);
+  border-radius: 6px;
+  padding: 6px 9px;
+  background: #fff;
+  color: var(--gg-dark);
+}
+
+.languages button:hover,
+.languages button:focus-visible {
+  border-color: var(--gg-green);
+}
+
+/* TABLET — preserva as regras originais */
+@media (min-width: 761px) and (max-width: 1024px) {
+  .content-grid { gap: 50px; }
+  .cards { grid-template-columns: 1fr 1fr; }
+  .contact-layout { gap: 35px; }
+  .footer-main { grid-template-columns: 1fr 1fr; }
+}
+
+/* MOBILE — preserva as regras originais */
+@media (max-width: 760px) {
+  .wrap { width: min(100% - 30px, 1180px); }
+  .site-header { position: relative; }
+  .nav {
+    min-height: auto;
+    padding: 17px 0;
+    flex-wrap: wrap;
   }
-
-  .site-header{
-    position:relative;
+  .brand img { width: 42px; height: 42px; }
+  .brand-text strong { font-size: 18px; }
+  .languages { margin-left: auto; }
+  .links {
+    width: 100%;
+    order: 3;
+    overflow-x: auto;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-left: 0;
+    padding: 12px 0 3px;
   }
-
-  .nav{
-    min-height:auto;
-    padding:17px 0;
-    flex-wrap:wrap;
-  }
-
-  .brand img{
-    width:42px;
-    height:42px;
-  }
-
-  .brand-text strong{
-    font-size:18px;
-  }
-
-  .languages{
-    margin-left:auto;
-  }
-
-  .links{
-    width:100%;
-    order:3;
-    overflow-x:auto;
-    justify-content:flex-start;
-    padding:12px 0 3px;
-  }
-
-  .links a{
-    white-space:nowrap;
-    font-size:13px;
-  }
-
-  .hero{
-    min-height:610px;
-  }
-
-  .hero-content{
-    padding:75px 0;
-  }
-
-  .hero h1{
-    font-size:clamp(38px,11vw,54px);
-  }
-
-  .hero-text{
-    font-size:17px;
-  }
-
-  .section{
-    padding:72px 0;
-  }
-
-  .content-grid,
-  .contact-layout{
-    grid-template-columns:1fr;
-  }
-
-  .cards{
-    grid-template-columns:1fr;
-  }
-
-  .contact-cta{
-    padding:80px 0;
-  }
-
-  .contact-info h2{
-    font-size:48px;
-  }
-
-  .contact-form-card{
-    padding:26px 20px;
-  }
-
-  .form-row{
-    grid-template-columns:1fr;
-    gap:0;
-  }
-
-  .footer-main{
-    grid-template-columns:1fr;
-    gap:38px;
-  }
-
+  .links a { white-space: nowrap; font-size: 13px; }
+  .hero { min-height: 610px; }
+  .hero-content { padding: 75px 0; }
+  .hero h1 { font-size: clamp(38px, 11vw, 54px); }
+  .hero-text { font-size: 17px; }
+  .section { padding: 72px 0; }
+  .content-grid, .contact-layout { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .contact-cta { padding: 80px 0; }
+  .contact-info h2 { font-size: 48px; }
+  .contact-form-card { padding: 26px 20px; }
+  .form-row { grid-template-columns: 1fr; gap: 0; }
+  .footer-main { grid-template-columns: 1fr; gap: 38px; }
 }
