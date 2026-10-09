@@ -279,3 +279,7 @@ footer:not(.footer) > .wrap {
   .footer-main { grid-template-columns: minmax(0,1fr); gap: 35px; }
   .footer { padding-top: 42px; }
 }
+
+/* Contact and confirmation pages: correct document heading hierarchy */
+.contact-info h1 { font-size: clamp(2.1rem, 4vw, 3.25rem); margin: 15px 0 22px; }
+@media (max-width:760px) { .contact-info h1 { font-size: clamp(2rem, 8vw, 2.7rem); } }
