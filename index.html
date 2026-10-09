@@ -1263,6 +1263,20 @@ h3{
       color: #d7e7dc;
     }
 
+
+    /* Three-guide beginner journey */
+    .learning-path-intro { margin: 32px 0 0; max-width: 760px; }
+    .learning-path-intro h3 { margin: 0 0 8px; font-size: clamp(1.3rem,2vw,1.6rem); color: var(--green-dark); }
+    .learning-path-intro p { margin: 0; color: var(--muted); line-height: 1.7; }
+    .learning-path-grid { grid-template-columns: repeat(3,minmax(0,1fr)); align-items: stretch; margin-top: 22px; }
+    .learning-guide-card { display: flex; flex-direction: column; min-width: 0; }
+    .learning-guide-card .guide-number { display: inline-block; align-self: flex-start; padding: 6px 10px; border-radius: 999px; background: #e2ede3; color: #194d37; font-size: .75rem; font-weight: 800; letter-spacing: .08em; margin-bottom: 20px; }
+    .learning-guide-card .tag { display: block; margin-bottom: 10px; }
+    .learning-guide-card h3 { line-height: 1.32; }
+    .learning-guide-card p { line-height: 1.7; }
+    .learning-guide-card .guide-read { display: inline-block; margin-top: auto; padding-top: 18px; color: #194f3d; font-weight: 800; }
+    .learning-guide-card:focus-visible { outline: 3px solid #2f805b; outline-offset: 3px; }
+    @media (max-width: 1080px) { .learning-path-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
     @media (max-width: 860px) {
       .question-grid,
       .article-grid,
@@ -2091,52 +2105,33 @@ h3{
 
     </p>
 
-    <div class="article-grid">
-
-<a
-        class="article-card"
-        href="/is-affiliate-marketing-legit">
-
-        <span
-          class="tag"
-          data-en="AFFILIATE MARKETING"
-          data-pt="MARKETING DE AFILIADOS">
-
-          AFFILIATE MARKETING
-
-        </span>
-
-        <h3
-          data-en="Is Affiliate Marketing Legit or a Scam? A Beginner’s Guide"
-          data-pt="Marketing de Afiliados é Legítimo ou Golpe? Guia para Iniciantes">
-
-          Is Affiliate Marketing Legit or a Scam? A Beginner’s Guide
-
-        </h3>
-
-        <p
-          data-en="How the model works, how commissions are earned, what is realistic and what to watch out for."
-          data-pt="Como o modelo funciona, como as comissões são geradas, o que é realista e quais cuidados tomar.">
-
-          How the model works, how commissions are earned, what is realistic and what to watch out for.
-
-        </p>
-
+    <div class="learning-path-intro">
+      <h3 data-en="Your beginner learning path" data-pt="Seu caminho de aprendizado">Your beginner learning path</h3>
+      <p data-en="Read these three guides in order, or choose the question you need today. No purchase is required." data-pt="Leia estes três guias em sequência ou escolha a dúvida que precisa resolver hoje. Nenhuma compra é necessária.">Read these three guides in order, or choose the question you need today. No purchase is required.</p>
+    </div>
+    <div class="article-grid learning-path-grid">
+      <a class="article-card learning-guide-card" href="/is-affiliate-marketing-legit">
+        <span class="guide-number" data-en="STEP 1 OF 3" data-pt="PASSO 1 DE 3">STEP 1 OF 3</span>
+        <span class="tag" data-en="UNDERSTAND THE BASICS" data-pt="ENTENDA O BÁSICO">UNDERSTAND THE BASICS</span>
+        <h3 data-en="Is Affiliate Marketing Legit or a Scam?" data-pt="Marketing de Afiliados é Legítimo ou Golpe?">Is Affiliate Marketing Legit or a Scam?</h3>
+        <p data-en="Learn how the model works, how commissions happen and which warning signs to recognize." data-pt="Entenda como o modelo funciona, como surgem as comissões e quais sinais de alerta reconhecer.">Learn how the model works, how commissions happen and which warning signs to recognize.</p>
+        <span class="guide-read" data-en="Read guide →" data-pt="Ler guia →">Read guide →</span>
       </a>
-
-
-<a class="article-card" href="/how-to-start-affiliate-marketing-with-zero-followers">
-  <span class="tag" data-en="AFFILIATE MARKETING" data-pt="MARKETING DE AFILIADOS">AFFILIATE MARKETING</span>
-  <h3 data-en="How to Start Affiliate Marketing With Zero Followers" data-pt="Como Começar no Marketing de Afiliados Sem Seguidores">How to Start Affiliate Marketing With Zero Followers</h3>
-  <p data-en="A realistic beginner plan: find one problem, publish helpful answers, earn trust and avoid costly mistakes." data-pt="Um plano realista para iniciantes: encontre um problema, publique respostas úteis, construa confiança e evite erros caros.">A realistic beginner plan: find one problem, publish helpful answers, earn trust and avoid costly mistakes.</p>
-</a>
-    
-<a class="article-card" href="/how-to-choose-an-affiliate-marketing-niche">
-  <span class="tag" data-en="AFFILIATE MARKETING" data-pt="MARKETING DE AFILIADOS">AFFILIATE MARKETING</span>
-  <h3 data-en="How to Choose an Affiliate Marketing Niche" data-pt="Como Escolher um Nicho de Marketing de Afiliados">How to Choose an Affiliate Marketing Niche</h3>
-  <p data-en="Five practical criteria, free ways to check demand and a simple plan to test one focused topic." data-pt="Cinco critérios práticos, formas gratuitas de avaliar a procura e um plano simples para testar um tema específico.">Five practical criteria, free ways to check demand and a simple plan to test one focused topic.</p>
-</a>
-</div>
+      <a class="article-card learning-guide-card" href="/how-to-choose-an-affiliate-marketing-niche">
+        <span class="guide-number" data-en="STEP 2 OF 3" data-pt="PASSO 2 DE 3">STEP 2 OF 3</span>
+        <span class="tag" data-en="FIND YOUR FOCUS" data-pt="ENCONTRE SEU FOCO">FIND YOUR FOCUS</span>
+        <h3 data-en="How to Choose an Affiliate Marketing Niche" data-pt="Como Escolher um Nicho de Marketing de Afiliados">How to Choose an Affiliate Marketing Niche</h3>
+        <p data-en="Explore five criteria, check real questions and test a focused topic without paid tools." data-pt="Explore cinco critérios, investigue perguntas reais e teste um tema específico sem ferramentas pagas.">Explore five criteria, check real questions and test a focused topic without paid tools.</p>
+        <span class="guide-read" data-en="Read guide →" data-pt="Ler guia →">Read guide →</span>
+      </a>
+      <a class="article-card learning-guide-card" href="/how-to-start-affiliate-marketing-with-zero-followers">
+        <span class="guide-number" data-en="STEP 3 OF 3" data-pt="PASSO 3 DE 3">STEP 3 OF 3</span>
+        <span class="tag" data-en="TAKE THE FIRST STEPS" data-pt="DÊ OS PRIMEIROS PASSOS">TAKE THE FIRST STEPS</span>
+        <h3 data-en="How to Start Affiliate Marketing With Zero Followers" data-pt="Como Começar no Marketing de Afiliados Sem Seguidores">How to Start Affiliate Marketing With Zero Followers</h3>
+        <p data-en="Build a realistic first-week plan, publish useful answers and learn without promising sales." data-pt="Monte um plano realista para a primeira semana, publique respostas úteis e aprenda sem prometer vendas.">Build a realistic first-week plan, publish useful answers and learn without promising sales.</p>
+        <span class="guide-read" data-en="Read guide →" data-pt="Ler guia →">Read guide →</span>
+      </a>
+    </div>
 
   </div>
 </section>
