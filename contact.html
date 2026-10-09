@@ -61,20 +61,20 @@
       </a>
 
       <a href="/#blog"
-         data-en="Blog"
-         data-pt="Blog">
+         data-en="Answers"
+         data-pt="Respostas">
         Blog
       </a>
 
-      <a href="/#resources"
-         data-en="Tools & Resources"
-         data-pt="Ferramentas e Recursos">
-        Tools &amp; Resources
+      <a href="/#start-here"
+         data-en="Start Here"
+         data-pt="Comece Aqui">
+        Start Here
       </a>
 
       <a href="/#reviews"
-         data-en="Reviews"
-         data-pt="Avaliações">
+         data-en="Recommendations"
+         data-pt="Recomendações">
         Reviews
       </a>
 
@@ -132,11 +132,11 @@
       </div>
 
 
-      <h2
+      <h1
         data-en="Talk to GOODGROUND"
         data-pt="Fale com a GOODGROUND">
         Talk to GOODGROUND
-      </h2>
+      </h1>
 
 
       <p
@@ -478,17 +478,17 @@
         About
       </a>
 
-      <a href="/#blog">Blog</a>
+      <a href="/#blog">Answers</a>
 
-      <a href="/#resources"
-         data-en="Tools & Resources"
-         data-pt="Ferramentas e Recursos">
-        Tools &amp; Resources
+      <a href="/#start-here"
+         data-en="Start Here"
+         data-pt="Comece Aqui">
+        Start Here
       </a>
 
       <a href="/#reviews"
-         data-en="Reviews"
-         data-pt="Avaliações">
+         data-en="Recommendations"
+         data-pt="Recomendações">
         Reviews
       </a>
 
@@ -743,6 +743,7 @@ document.addEventListener(
 
             form.reset();
 
+            sessionStorage.setItem('goodground-contact-submitted', '1');
             window.location.href = '/thank-you.html';
 
           } else {
