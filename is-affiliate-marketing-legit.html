@@ -151,6 +151,16 @@
 
 }
 
+
+/* Reading suggestions */
+.book-recommendations { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:24px 0; }
+.book-recommendation { padding:20px; background:#fff; border:1px solid #e3e9df; border-radius:14px; }
+.book-recommendation .book-author { margin:0 0 8px; font-size:11px; letter-spacing:.14em; font-weight:800; color:#52745e; }
+.book-recommendation h3 { margin:0 0 12px; font-size:1.3rem; }
+.book-recommendation p:last-child { margin:0; font-size:14px; line-height:1.65; }
+.official-reference { margin-top:22px; font-size:13px; color:#5b6d60; }
+.official-links { margin-bottom:0; font-size:13px; }
+@media(max-width:800px) { .book-recommendations { grid-template-columns:1fr; } }
 </style>
 
 <script type="application/ld+json">
@@ -935,81 +945,53 @@ Ask GoodGround →
 
 
 
-<div class="source-box">
+<section class="source-box" aria-label="Recommended books and official guidance">
 
 <h2
-  data-en="Sources and further reading"
-  data-pt="Fontes e leitura complementar">
-
-Sources and further reading
-
+  data-en="Books for your next step"
+  data-pt="Livros para dar o próximo passo">
+Books for your next step
 </h2>
 
+<p
+  data-en="If you are building your first online business, these books offer useful perspectives on habits, decision-making and personal growth. They are optional reading, not a requirement to start or a promise of income."
+  data-pt="Se você está começando seu primeiro negócio online, estes livros trazem perspectivas úteis sobre hábitos, decisões e desenvolvimento pessoal. São leituras opcionais, não uma exigência para começar nem uma promessa de renda.">
+If you are building your first online business, these books offer useful perspectives on habits, decision-making and personal growth. They are optional reading, not a requirement to start or a promise of income.
+</p>
 
-<ul>
-
-<li>
-<a
-  href="https://www.clickbank.com/what-is-affiliate-marketing/"
-  target="_blank"
-  rel="noopener noreferrer">
-
-ClickBank — What Is Affiliate Marketing?
-
-</a>
-</li>
-
-
-<li>
-<a
-  href="https://support.clickbank.com/en/articles/10535211-what-is-the-affiliate-network"
-  target="_blank"
-  rel="noopener noreferrer">
-
-ClickBank Support — What is the affiliate network?
-
-</a>
-</li>
-
-
-<li>
-<a
-  href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking"
-  target="_blank"
-  rel="noopener noreferrer">
-
-FTC — Endorsement Guides
-
-</a>
-</li>
-
-
-<li>
-<a
-  href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content"
-  target="_blank"
-  rel="noopener noreferrer">
-
-Google Search Central — Helpful, reliable, people-first content
-
-</a>
-</li>
-
-
-<li>
-<a
-  href="https://developers.google.com/search/docs/fundamentals/using-gen-ai-content"
-  target="_blank"
-  rel="noopener noreferrer">
-
-Google Search Central — Generative AI content guidance
-
-</a>
-</li>
-
-</ul>
-
+<div class="book-recommendations">
+  <div class="book-recommendation">
+    <p class="book-author">TONY ROBBINS</p>
+    <h3>Awaken the Giant Within</h3>
+    <p data-en="A classic about taking responsibility for your decisions, setting goals and creating lasting personal change. Helpful when you need direction before choosing a business model."
+       data-pt="Um clássico sobre assumir a responsabilidade pelas próprias decisões, definir objetivos e criar mudanças duradouras. Útil para encontrar direção antes de escolher um modelo de negócio.">A classic about taking responsibility for your decisions, setting goals and creating lasting personal change. Helpful when you need direction before choosing a business model.</p>
+  </div>
+  <div class="book-recommendation">
+    <p class="book-author">DEAN GRAZIOSI</p>
+    <h3>Millionaire Success Habits</h3>
+    <p data-en="Focuses on everyday habits, clarity and taking consistent action. A practical complement for beginners who feel overwhelmed by too many online opportunities."
+       data-pt="Aborda hábitos diários, clareza e ações consistentes. Uma leitura complementar para iniciantes que se sentem sobrecarregados com tantas oportunidades na internet.">Focuses on everyday habits, clarity and taking consistent action. A practical complement for beginners who feel overwhelmed by too many online opportunities.</p>
+  </div>
+  <div class="book-recommendation">
+    <p class="book-author">DEAN GRAZIOSI</p>
+    <h3>The Underdog Advantage</h3>
+    <p data-en="Explores how to move forward without a perfect starting position. Relevant for people beginning with limited experience, confidence or resources."
+       data-pt="Explora como avançar mesmo sem começar em uma posição ideal. Relevante para quem está iniciando com pouca experiência, confiança ou recursos.">Explores how to move forward without a perfect starting position. Relevant for people beginning with limited experience, confidence or resources.</p>
+  </div>
 </div>
+
+<p class="official-reference"
+   data-en="For the specific legal and search guidance mentioned above, consult the official FTC Endorsement Guides and Google Search Central documentation. Books on personal development do not replace those rules."
+   data-pt="Para as orientações legais e de pesquisa mencionadas acima, consulte os guias oficiais de divulgação da FTC e a documentação do Google Search Central. Livros de desenvolvimento pessoal não substituem essas regras.">
+For the specific legal and search guidance mentioned above, consult the official FTC Endorsement Guides and Google Search Central documentation. Books on personal development do not replace those rules.
+</p>
+<p class="official-links">
+  <a href="https://www.ftc.gov/business-guidance/resources/ftcs-endorsement-guides-what-people-are-asking" target="_blank" rel="noopener noreferrer">FTC</a>
+  <span aria-hidden="true"> · </span>
+  <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content" target="_blank" rel="noopener noreferrer">Google Search Central</a>
+</p>
+
+</section>
 
 
 
