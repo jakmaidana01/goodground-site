@@ -20,7 +20,7 @@
 
   <meta
     name="description"
-    content="Contact GoodGround. Leave your name, email, phone number and message and we will get back to you."
+    content="Contact GoodGround in English or Portuguese. Send your question, suggestion or partnership inquiry through our secure contact form."
   >
 
   <link rel="stylesheet" href="/styles.css">
@@ -464,7 +464,7 @@
 
     <div class="footer-column">
 
-      <h4>EXPLORE</h4>
+      <h4 data-en="EXPLORE" data-pt="EXPLORE">EXPLORE</h4>
 
       <a href="/"
          data-en="Home"
@@ -504,7 +504,7 @@
 
     <div class="footer-column">
 
-      <h4>LEGAL</h4>
+      <h4 data-en="LEGAL" data-pt="INFORMAÇÕES LEGAIS">LEGAL</h4>
 
       <a
         href="/privacy"
@@ -664,7 +664,7 @@ function setLanguage(language) {
   });
 
 
-  document.documentElement.lang = language;
+  document.documentElement.lang = language === 'pt' ? 'pt-BR' : 'en';
 
   const formLanguage = document.getElementById('form-language');
 
@@ -679,6 +679,10 @@ function setLanguage(language) {
   document
     .getElementById('lang-pt')
     .classList.toggle('active', language === 'pt');
+
+  document.title = language === 'pt'
+    ? 'Contato GoodGround — Fale Conosco'
+    : 'Contact GoodGround — Built on Trust';
 
   localStorage.setItem(
     'goodground-language',
