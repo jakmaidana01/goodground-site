@@ -14,12 +14,15 @@
   </script>
 
   <!-- Event snippet for Enviar formulário de lead conversion page -->
+  <!-- Count a contact-form lead only after Formspree confirms submission.
+       A direct visit or refresh must not generate a new conversion. -->
   <script>
-    gtag('event', 'conversion', {
-      'send_to': 'AW-18292006129/95cACOj25YIdEPG5p5JE',
-      'value': 1.0,
-      'currency': 'BRL'
-    });
+    if (sessionStorage.getItem('goodground-contact-submitted') === '1') {
+      sessionStorage.removeItem('goodground-contact-submitted');
+      gtag('event', 'conversion', {
+        'send_to': 'AW-18292006129/95cACOj25YIdEPG5p5JE'
+      });
+    }
   </script>
 
   <meta charset="utf-8">
@@ -70,20 +73,20 @@
       </a>
 
       <a href="/#blog"
-         data-en="Blog"
-         data-pt="Blog">
+         data-en="Answers"
+         data-pt="Respostas">
         Blog
       </a>
 
-      <a href="/#resources"
-         data-en="Tools & Resources"
-         data-pt="Ferramentas e Recursos">
-        Tools &amp; Resources
+      <a href="/#start-here"
+         data-en="Start Here"
+         data-pt="Comece Aqui">
+        Start Here
       </a>
 
       <a href="/#reviews"
-         data-en="Reviews"
-         data-pt="Avaliações">
+         data-en="Recommendations"
+         data-pt="Recomendações">
         Reviews
       </a>
 
@@ -140,12 +143,12 @@
       MESSAGE RECEIVED
     </div>
 
-    <h2
+    <h1
       style="margin-top:18px;"
       data-en="Thank you for reaching out."
       data-pt="Obrigada por entrar em contato.">
       Thank you for reaching out.
-    </h2>
+    </h1>
 
     <p
       data-en="We received your message and will get back to you as soon as possible."
@@ -235,17 +238,17 @@
         About
       </a>
 
-      <a href="/#blog">Blog</a>
+      <a href="/#blog">Answers</a>
 
-      <a href="/#resources"
-         data-en="Tools & Resources"
-         data-pt="Ferramentas e Recursos">
-        Tools &amp; Resources
+      <a href="/#start-here"
+         data-en="Start Here"
+         data-pt="Comece Aqui">
+        Start Here
       </a>
 
       <a href="/#reviews"
-         data-en="Reviews"
-         data-pt="Avaliações">
+         data-en="Recommendations"
+         data-pt="Recomendações">
         Reviews
       </a>
 
