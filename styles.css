@@ -216,3 +216,66 @@ footer:not(.footer) > .wrap {
   .form-row { grid-template-columns: 1fr; gap: 0; }
   .footer-main { grid-template-columns: 1fr; gap: 38px; }
 }
+
+
+/* PÁGINA DE CONTATO — layout e formulário bilingue */
+.contact-section { padding: 72px 0 92px; background: #f8faf6; }
+.contact-layout { display: grid; grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: 62px; align-items: start; }
+.contact-info { min-width: 0; }
+.contact-info .eyebrow { color: #557260; font-size: 12px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.contact-info h2 { font-size: clamp(2.1rem, 4vw, 3.25rem); margin: 15px 0 22px; }
+.contact-info > p { max-width: 530px; color: #4d6053; font-size: 17px; }
+.contact-method { margin-top: 30px; display: flex; flex-direction: column; gap: 7px; }
+.contact-method-label { color: #64756a; font-size: 12px; font-weight: 800; letter-spacing: .08em; }
+.contact-method-link { font-size: 17px; font-weight: 700; overflow-wrap: anywhere; }
+.contact-social-text { margin-top: 24px; color: #4d6053; }
+.social-icons { display: flex; align-items: center; gap: 14px; }
+.social-icon { display: inline-flex; align-items: center; justify-content: center; color: #194f3d; text-decoration: none; }
+.social-icon:hover, .social-icon:focus-visible { color: #307a58; }
+.contact-form-card { background: #fff; border: 1px solid #e2e9e0; border-radius: 20px; padding: 34px; box-shadow: 0 14px 42px rgba(24, 61, 40, .07); min-width: 0; }
+.form-row { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 7px; margin-bottom: 20px; min-width: 0; }
+.form-group label { color: #294736; font-size: 14px; font-weight: 700; }
+.form-group input, .form-group textarea { display: block; width: 100%; max-width: 100%; padding: 13px 14px; border: 1px solid #cdd9cf; border-radius: 9px; background: #fff; color: #203b28; font: inherit; line-height: 1.4; }
+.form-group textarea { resize: vertical; min-height: 154px; }
+.form-group input:focus, .form-group textarea:focus { outline: 2px solid #3d8963; outline-offset: 1px; border-color: #3d8963; }
+.form-submit { display: inline-flex; justify-content: center; align-items: center; border: 0; border-radius: 9px; background: #194f3d; color: #fff; padding: 13px 26px; font: inherit; font-weight: 700; cursor: pointer; }
+.form-submit:hover, .form-submit:focus-visible { background: #286d50; }
+.form-submit:disabled { opacity: .65; cursor: wait; }
+.form-privacy { font-size: 13px; color: #66796b; margin: 18px 0 0; }
+.form-privacy a { font-weight: 700; }
+
+/* RODAPÉ — impedir imagem gigante e links sem organização */
+.footer { background: #123c2d; color: #f4f5ed; padding-top: 58px; }
+.footer a, .footer p, .footer h4, .footer strong, .footer span { color: inherit; }
+.footer a { text-decoration: none; }
+.footer a:hover, .footer a:focus-visible { text-decoration: underline; }
+.footer-main { display: grid; grid-template-columns: minmax(0, 1.7fr) repeat(3, minmax(0, 1fr)); gap: 40px; padding-bottom: 50px; }
+.footer-column { display: flex; flex-direction: column; align-items: flex-start; gap: 13px; min-width: 0; }
+.footer-column h4 { font: 800 13px/1.4 Arial,Helvetica,sans-serif; letter-spacing: .09em; margin: 0 0 10px; }
+.footer-column > a { font-size: 14px; line-height: 1.5; }
+.footer-brand { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.footer-brand img { display: block; width: 52px; height: 52px; max-width: 52px; object-fit: contain; flex: 0 0 52px; }
+.footer-brand > div { display: flex; flex-direction: column; gap: 2px; }
+.footer-brand strong { font-size: 18px; line-height: 1.15; }
+.footer-brand span { font-size: 10px; letter-spacing: .12em; }
+.footer-about p { margin: 0; color: #d9e6db; font-size: 14px; line-height: 1.7; }
+.footer-connect .social-icons { margin-top: 2px; }
+.footer-connect .social-icon { color: #f4f5ed; }
+.footer-bottom { border-top: 1px solid rgba(255,255,255,.2); padding: 22px 0 30px; }
+.footer-bottom p { margin: 0 0 12px; color: #dce8dc; font-size: 12px; line-height: 1.7; max-width: 850px; }
+.footer-bottom p:last-child { margin-bottom: 0; }
+
+@media (max-width: 1024px) {
+  .contact-layout { gap: 30px; }
+  .footer-main { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (max-width: 760px) {
+  .contact-section { padding: 46px 0 64px; }
+  .contact-layout { grid-template-columns: minmax(0,1fr); gap: 30px; }
+  .contact-info h2 { font-size: clamp(2rem, 8vw, 2.7rem); }
+  .contact-form-card { padding: 24px 18px; }
+  .form-row { grid-template-columns: minmax(0,1fr); gap: 0; }
+  .footer-main { grid-template-columns: minmax(0,1fr); gap: 35px; }
+  .footer { padding-top: 42px; }
+}
