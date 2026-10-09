@@ -283,3 +283,14 @@ footer:not(.footer) > .wrap {
 /* Contact and confirmation pages: correct document heading hierarchy */
 .contact-info h1 { font-size: clamp(2.1rem, 4vw, 3.25rem); margin: 15px 0 22px; }
 @media (max-width:760px) { .contact-info h1 { font-size: clamp(2rem, 8vw, 2.7rem); } }
+
+
+/* Guide navigation: consistent across the three educational articles */
+.guide-path { padding: 22px 0 12px; }
+.guide-path-label { margin: 0 0 10px; font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; color: #52705d; }
+.guide-path-links { display: flex; flex-wrap: wrap; gap: 10px; }
+.guide-path-links a { display: inline-flex; align-items: center; min-height: 40px; padding: 9px 14px; border: 1px solid #cfded1; border-radius: 999px; color: #1a4c37; background: #f8faf6; font-size: 13px; font-weight: 700; line-height: 1.4; text-decoration: none; }
+.guide-path-links a:hover, .guide-path-links a:focus-visible { background: #e3efe5; border-color: #7a9e83; }
+.guide-path-links a[aria-current="page"] { background: #194f3d; border-color: #194f3d; color: #fff; }
+.guide-path-links a:focus-visible { outline: 2px solid #337b55; outline-offset: 2px; }
+@media (max-width: 600px) { .guide-path { padding-top: 16px; } .guide-path-links a { font-size: 12px; } }
